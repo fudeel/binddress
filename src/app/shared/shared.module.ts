@@ -6,12 +6,13 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon'
 
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 
 
 
 @NgModule({
-  declarations: [ToolbarComponent],
+  declarations: [ToolbarComponent, CarouselComponent],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -22,7 +23,8 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     MatToolbarModule,
     MatGridListModule,
     MatIconModule,
-    ToolbarComponent
+    ToolbarComponent,
+    CarouselComponent
   ]
 })
 export class SharedModule { }
