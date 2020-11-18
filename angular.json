@@ -122,6 +122,10 @@
               "devServerTarget": "bindress:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }
