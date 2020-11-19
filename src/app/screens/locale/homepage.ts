@@ -5,7 +5,8 @@ const HOMEPAGE_LOCALE = {
         subtitle: [
             'Register an article and bind it to you', 'Registra un articolo e legalo a te'
         ],
-        search: ['Search for bound items', 'Cerca articoli bindati']
+        search: ['Search for bound items', 'Cerca articoli bindati'],
+        searchButton : ['Search', 'Cerca']
     }
 ;
 

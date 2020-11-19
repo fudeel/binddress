@@ -10,12 +10,14 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogComponent } from './components/dialog/dialog.component';
 
 
 
 
 @NgModule({
-  declarations: [ToolbarComponent, CarouselComponent],
+  declarations: [ToolbarComponent, CarouselComponent, DialogComponent],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -24,7 +26,8 @@ import {MatButtonModule} from '@angular/material/button';
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule
   ],
   exports: [
     MatToolbarModule,
@@ -35,7 +38,9 @@ import {MatButtonModule} from '@angular/material/button';
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    DialogComponent
   ]
 })
 export class SharedModule { }
