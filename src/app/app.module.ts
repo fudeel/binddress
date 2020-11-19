@@ -11,6 +11,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {DialogComponent} from './shared/components/dialog/dialog.component';
 import {AngularFireAnalyticsModule} from '@angular/fire/analytics';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {AngularFirestoreModule} from '@angular/fire/firestore';
     AngularFirestoreModule,
     SharedModule,
     NgbModule,
+    FontAwesomeModule,
   ],
   entryComponents: [DialogComponent],
   providers: [],
