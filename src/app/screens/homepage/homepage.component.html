@@ -1,4 +1,4 @@
-<div class="container">
+<div class="homepage">
   <div [formGroup]="simpleSearchForm" class="row">
     <div class="col d-flex justify-content-center">
       <div class="simple-search">
@@ -12,7 +12,7 @@
         </div>
         <div class="row">
           <div class="col d-flex justify-content-center">
-            <button color="primary" mat-raised-button>{{locale.searchButton[l]}}</button>
+            <button (click)="onSimpleSearch()" color="primary" mat-raised-button>{{locale.searchButton[l]}}</button>
           </div>
         </div>
       </div>

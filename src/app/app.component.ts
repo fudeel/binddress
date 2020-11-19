@@ -1,24 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
 import {DialogComponent} from './shared/components/dialog/dialog.component';
 import * as elements from './shared/elements/elements';
+import {LoadingService} from './shared/services/loading.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'bindress';
+  isLoading = false;
 
+  constructor(private dialog: MatDialog, private readonly loadingService: LoadingService) {
+    loadingService.isLoading$.subscribe((loading: boolean) => {
+      this.isLoading = loading;
+    });
 
-  constructor(private dialog: MatDialog) {
   }
 
 
   ngOnInit(): void {
     const localStorageValue = localStorage.getItem('locale');
-    const locale =  elements.getLocaleFromLocalStorage();
+    const locale = elements.getLocaleFromLocalStorage();
     if (localStorageValue) {
     } else {
       this.openDialog();
