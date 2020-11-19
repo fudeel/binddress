@@ -7,6 +7,9 @@ import { MatIconModule } from '@angular/material/icon'
 
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -17,14 +20,22 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     CommonModule,
     MatToolbarModule,
     MatGridListModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatButtonModule
   ],
   exports: [
     MatToolbarModule,
     MatGridListModule,
     MatIconModule,
     ToolbarComponent,
-    CarouselComponent
+    CarouselComponent,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatButtonModule
   ]
 })
 export class SharedModule { }

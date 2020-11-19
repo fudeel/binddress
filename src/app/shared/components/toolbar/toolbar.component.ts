@@ -14,8 +14,6 @@ export class ToolbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
-    console.log(this.locale);
   }
 
 }

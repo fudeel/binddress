@@ -1,12 +1,12 @@
-const HOMEPAGE_LOCALE = [
-    {
+const HOMEPAGE_LOCALE = {
         mainText: [
-            "Bind it to you, NOW!", "Bindalo a te, ORA!"
+            'Bind it to you, NOW!', 'Bindalo a te, ORA!'
         ],
         subtitle: [
-            "Register an article and bind it to you", "Registra un articolo e legalo a te"
-        ]
+            'Register an article and bind it to you', 'Registra un articolo e legalo a te'
+        ],
+        search: ['Search for bound items', 'Cerca articoli bindati']
     }
-]
+;
 
 export default HOMEPAGE_LOCALE;
