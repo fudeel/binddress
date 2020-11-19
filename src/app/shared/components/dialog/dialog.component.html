@@ -1,1 +1,5 @@
-{{dialogConfig.data}}
+<div class="row">
+  <div *ngFor="let d of data" class="col d-flex justify-content-center">
+    <button mat-raised-button color="primary" (click)="onLanguageSelection(d.id)">{{d.name}}</button>
+  </div>
+</div>
