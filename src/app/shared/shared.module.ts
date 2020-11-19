@@ -14,10 +14,13 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {DialogComponent} from './components/dialog/dialog.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatSelectModule} from '@angular/material/select';
+import {TutorialCardComponent} from './components/tutorial-card/tutorial-card.component';
+import {MatCardModule} from '@angular/material/card';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
-  declarations: [ToolbarComponent, CarouselComponent, DialogComponent],
+  declarations: [ToolbarComponent, CarouselComponent, DialogComponent, TutorialCardComponent],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -29,7 +32,9 @@ import {MatSelectModule} from '@angular/material/select';
     MatButtonModule,
     MatDialogModule,
     MatProgressBarModule,
-    MatSelectModule
+    MatSelectModule,
+    MatCardModule,
+    FontAwesomeModule
   ],
   exports: [
     MatToolbarModule,
@@ -44,7 +49,10 @@ import {MatSelectModule} from '@angular/material/select';
     MatDialogModule,
     DialogComponent,
     MatProgressBarModule,
-    MatSelectModule
+    MatSelectModule,
+    TutorialCardComponent,
+    MatCardModule,
+    FontAwesomeModule
   ]
 })
 export class SharedModule { }

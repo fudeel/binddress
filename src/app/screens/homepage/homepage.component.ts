@@ -5,6 +5,7 @@ import CATEGORY_LIST_LOCALE from '../../shared/locale/category-list';
 import {FormBuilder, Validators} from '@angular/forms';
 import {LoadingService} from '../../shared/services/loading.service';
 import * as elements from '../../shared/elements/elements';
+import TUTORIAL_CARDS_LOCALE from '../../shared/locale/tutorial-cards';
 
 
 interface Categories {
@@ -21,7 +22,8 @@ interface Categories {
 export class HomepageComponent implements OnInit {
 
   categoryLocale = CATEGORY_LOCALE;
-  categorylistlocale = CATEGORY_LIST_LOCALE;
+  categoryListLocale = CATEGORY_LIST_LOCALE;
+  tutorialCardsLocale = TUTORIAL_CARDS_LOCALE;
 
   categories: Categories[] = [];
 
@@ -40,7 +42,7 @@ export class HomepageComponent implements OnInit {
   ngOnInit(): void {
     const localeValue = elements.getLocaleFromLocalStorage();
 
-    this.categorylistlocale[localeValue].forEach(c => {
+    this.categoryListLocale[localeValue].forEach(c => {
       this.categories.push({value: c.id, viewValue: c.value});
     });
   }
