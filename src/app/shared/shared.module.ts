@@ -13,6 +13,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import {DialogComponent} from './components/dialog/dialog.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatSelectModule} from '@angular/material/select';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatInputModule,
     MatButtonModule,
     MatDialogModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatSelectModule
   ],
   exports: [
     MatToolbarModule,
@@ -41,7 +43,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatButtonModule,
     MatDialogModule,
     DialogComponent,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatSelectModule
   ]
 })
 export class SharedModule { }
