@@ -24,6 +24,7 @@ export class AppComponent implements OnInit{
 
     dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
+    dialogConfig.data = {};
 
     this.dialog.open(DialogComponent, dialogConfig);
   }
