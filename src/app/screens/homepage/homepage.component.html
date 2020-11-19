@@ -32,7 +32,7 @@
 </div>
 <div class="tutorial-cards">
   <div class="row d-flex justify-content-center">
-    <div *ngFor="let t of tutorialCardsLocale" class="col-12 col-md-3 my-3">
+    <div *ngFor="let t of tutorialCardsSelected" class="col-12 col-md-3 my-3">
       <app-tutorial-card [tutorialCard]="t[0]"></app-tutorial-card>
     </div>
   </div>

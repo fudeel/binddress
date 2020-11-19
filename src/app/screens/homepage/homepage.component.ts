@@ -26,6 +26,7 @@ export class HomepageComponent implements OnInit {
   tutorialCardsLocale = TUTORIAL_CARDS_LOCALE;
 
   categories: Categories[] = [];
+  tutorialCardsSelected = [];
 
   homepageLocale;
   l = 0;
@@ -37,6 +38,8 @@ export class HomepageComponent implements OnInit {
   constructor(private fb: FormBuilder, private readonly loadingService: LoadingService) {
     this.l = localStorage.getItem('locale') ? JSON.parse(localStorage.getItem('locale')) : 0;
     this.homepageLocale = HOMEPAGE_LOCALE;
+    this.tutorialCardsSelected = this.tutorialCardsLocale[this.l];
+
   }
 
   ngOnInit(): void {
