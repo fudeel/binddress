@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a4f92088-5491-461e-a3ed-05f772e40fb8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="fudeel &lt;fadil_mucia@hotmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kY4VElusAaO7PXYFvu3CTJxeHR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Programmi" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="ts.external.directory.path" value="C:\Users\famuca\WebstormProjects\binddress\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4f92088-5491-461e-a3ed-05f772e40fb8" name="Default Changelist" comment="" />
+      <created>1605864212642</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605864212642</updated>
+      <workItem from="1605864213781" duration="8873000" />
+      <workItem from="1606129208994" duration="3278000" />
+      <workItem from="1606298823292" duration="1659000" />
+    </task>
+    <task id="LOCAL-00001" summary="firebase and github config">
+      <created>1605872022737</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605872022737</updated>
+    </task>
+    <task id="LOCAL-00002" summary="homepage form handling">
+      <created>1606300031240</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606300031241</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="firebase and github config" />
+    <MESSAGE value="homepage form handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="homepage form handling" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1606300022946">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606300022946" />
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1605882798929">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605882798929" />
+    <state width="1899" height="275" key="GridCell.Tab.0.center" timestamp="1605882798928">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605882798928" />
+    <state width="1899" height="275" key="GridCell.Tab.0.left" timestamp="1605882798927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605882798927" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right" timestamp="1605882798929">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605882798929" />
+    <state x="756" y="165" key="RollbackChangesDialog" timestamp="1606132637414">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="756" y="165" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606132637414" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606300042213">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606300042213" />
+    <state x="668" y="237" width="583" height="566" key="find.popup" timestamp="1606131132073">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="237" width="583" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606131132073" />
+  </component>
+</project>
