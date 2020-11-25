@@ -1,4 +1,4 @@
-<div class="homepage">
+<div class="homepage container">
   <div [formGroup]="simpleSearchForm" class="row">
     <div class="col d-flex justify-content-center">
       <div class="simple-search">
@@ -7,7 +7,7 @@
           <div class="col d-flex justify-content-center">
             <mat-form-field appearance="fill">
               <mat-label>{{categoryLocale[0].category[l]}}</mat-label>
-              <mat-select>
+              <mat-select formControlName="category">
                 <mat-option *ngFor="let c of categories" [value]="c.value">
                   {{c.viewValue}}
                 </mat-option>
@@ -16,13 +16,13 @@
           </div>
           <div class="col d-flex justify-content-center">
             <mat-form-field class="example-full-width">
-              <input [placeholder]="homepageLocale.searchPlaceholder[l]" matInput>
+              <input [placeholder]="homepageLocale.searchPlaceholder[l]" matInput formControlName="code">
             </mat-form-field>
           </div>
         </div>
         <div class="row px-4">
           <div class="col d-flex justify-content-md-end justify-content-center">
-            <button (click)="onSimpleSearch()" color="primary"
+            <button (click)="onSimpleSearch()" color="primary" [disabled]="simpleSearchForm.status === 'INVALID'"
                     mat-raised-button>{{homepageLocale.searchButton[l]}}</button>
           </div>
         </div>

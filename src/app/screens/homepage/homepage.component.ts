@@ -32,6 +32,7 @@ export class HomepageComponent implements OnInit {
   l = 0;
 
   simpleSearchForm = this.fb.group({
+    category: ['', Validators.required],
     code: ['', Validators.required],
   });
 
@@ -52,6 +53,7 @@ export class HomepageComponent implements OnInit {
 
 
   onSimpleSearch(): void {
+    console.log(this.simpleSearchForm);
     this.loadingService.isLoading = true;
   }
 

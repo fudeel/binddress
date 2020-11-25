@@ -22,7 +22,7 @@ const CATEGORY_LIST_LOCALE = [
     {id: 'cat-4', value: 'Felpe'},
     {id: 'cat-5', value: 'Gilet'},
     {id: 'cat-6', value: 'Camicie'},
-    {id: 'cat-7', value: 'T-Magliette'},
+    {id: 'cat-7', value: 'Magliette'},
     {id: 'cat-8', value: 'Borse'}
   ]
 ];
