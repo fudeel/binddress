@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4f92088-5491-461e-a3ed-05f772e40fb8" name="Default Changelist" comment="" />
+    <list default="true" id="a4f92088-5491-461e-a3ed-05f772e40fb8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/locale/category-list.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/locale/category-list.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="CSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -58,6 +62,7 @@
       <workItem from="1605864213781" duration="8873000" />
       <workItem from="1606129208994" duration="3278000" />
       <workItem from="1606298823292" duration="1659000" />
+      <workItem from="1606316217183" duration="5628000" />
     </task>
     <task id="LOCAL-00001" summary="firebase and github config">
       <created>1605872022737</created>
@@ -73,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606300031241</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="homepage form handling">
+      <created>1606316475783</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606316475783</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,10 +97,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="homepage form handling" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1606300022946">
+    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1606316465208">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606300022946" />
+    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606316465208" />
     <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1605882798929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -109,13 +121,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="165" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606132637414" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606300042213">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606316692441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606300042213" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606316692441" />
     <state x="668" y="237" width="583" height="566" key="find.popup" timestamp="1606131132073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="668" y="237" width="583" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606131132073" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606317269621">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606317269621" />
   </component>
 </project>

@@ -6,6 +6,7 @@ import {FormBuilder, Validators} from '@angular/forms';
 import {LoadingService} from '../../shared/services/loading.service';
 import * as elements from '../../shared/elements/elements';
 import TUTORIAL_CARDS_LOCALE from '../../shared/locale/tutorial-cards';
+import {AngularFirestore} from "@angular/fire/firestore";
 
 
 interface Categories {
@@ -36,7 +37,7 @@ export class HomepageComponent implements OnInit {
     code: ['', Validators.required],
   });
 
-  constructor(private fb: FormBuilder, private readonly loadingService: LoadingService) {
+  constructor(private fb: FormBuilder, private readonly loadingService: LoadingService, private readonly afs: AngularFirestore) {
     this.l = localStorage.getItem('locale') ? JSON.parse(localStorage.getItem('locale')) : 0;
     this.homepageLocale = HOMEPAGE_LOCALE;
     this.tutorialCardsSelected = this.tutorialCardsLocale[this.l];
@@ -55,6 +56,12 @@ export class HomepageComponent implements OnInit {
   onSimpleSearch(): void {
     console.log(this.simpleSearchForm);
     this.loadingService.isLoading = true;
+
+    this.afs.collection(this.simpleSearchForm.controls.category.value, ref =>
+      ref.where('itemId', '==', this.simpleSearchForm.controls.code.value)
+    ).valueChanges().subscribe(res => {
+      console.log(res)
+    })
   }
 
 }

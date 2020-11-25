@@ -4,26 +4,26 @@
 */
 const CATEGORY_LIST_LOCALE = [
   [
-    {id: 'cat-0', value: 'Shoes'},
-    {id: 'cat-1', value: 'Coats and jackets'},
-    {id: 'cat-2', value: 'Jeans'},
-    {id: 'cat-3', value: 'Pants'},
-    {id: 'cat-4', value: 'Sweatshirts'},
-    {id: 'cat-5', value: 'Vests'},
-    {id: 'cat-6', value: 'Shirts'},
-    {id: 'cat-7', value: 'T-shirts'},
-    {id: 'cat-8', value: 'Bags'}
+    {id: 'shoes', value: 'Shoes'},
+    {id: 'coats-and-jackets', value: 'Coats and jackets'},
+    {id: 'jeans', value: 'Jeans'},
+    {id: 'pants', value: 'Pants'},
+    {id: 'sweatshirts', value: 'Sweatshirts'},
+    {id: 'vests', value: 'Vests'},
+    {id: 'shirts', value: 'Shirts'},
+    {id: 't-shirts', value: 'T-shirts'},
+    {id: 'bags', value: 'Bags'}
   ],
   [
-    {id: 'cat-0', value: 'Scarpe'},
-    {id: 'cat-1', value: 'Cappotti e giubbotti'},
-    {id: 'cat-2', value: 'Jeans'},
-    {id: 'cat-3', value: 'Pantaloni'},
-    {id: 'cat-4', value: 'Felpe'},
-    {id: 'cat-5', value: 'Gilet'},
-    {id: 'cat-6', value: 'Camicie'},
-    {id: 'cat-7', value: 'Magliette'},
-    {id: 'cat-8', value: 'Borse'}
+    {id: 'shoes', value: 'Scarpe'},
+    {id: 'coats-and-jackets', value: 'Cappotti e giubbotti'},
+    {id: 'jeans', value: 'Jeans'},
+    {id: 'pants', value: 'Pantaloni'},
+    {id: 'sweatshirts', value: 'Felpe'},
+    {id: 'vests', value: 'Gilet'},
+    {id: 'shirts', value: 'Camicie'},
+    {id: 't-shirts', value: 'Magliette'},
+    {id: 'bags', value: 'Borse'}
   ]
 ];
 
