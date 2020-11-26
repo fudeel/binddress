@@ -1,10 +1,9 @@
 export class Item {
-  pkItemUuid: string;
   itemId: string;
   fkCurrentOwnerUuid: string;
-  fkCategoryUuid: string;
+  category: string;
   itemName: string;
-  itemRarity: "gray" | "white" | "green" | "blue" | "purple" | "orange";
+  itemRarity: "grey" | "white" | "green" | "blue" | "purple" | "orange";
   isBound: boolean;
-  allOwnersUuidAndBindTime: any
+  previousOwners: [{userId: string}];
 }

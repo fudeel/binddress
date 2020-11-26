@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a4f92088-5491-461e-a3ed-05f772e40fb8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/locale/category-list.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/locale/category-list.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/models/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/models/item.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +44,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Programmi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="ts.external.directory.path" value="C:\Users\famuca\WebstormProjects\binddress\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\famuca\WebstormProjects\binddress\src\assets" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -62,7 +67,8 @@
       <workItem from="1605864213781" duration="8873000" />
       <workItem from="1606129208994" duration="3278000" />
       <workItem from="1606298823292" duration="1659000" />
-      <workItem from="1606316217183" duration="5628000" />
+      <workItem from="1606316217183" duration="5694000" />
+      <workItem from="1606385587305" duration="6607000" />
     </task>
     <task id="LOCAL-00001" summary="firebase and github config">
       <created>1605872022737</created>
@@ -85,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606316475783</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="getting shoes from firebase">
+      <created>1606323572531</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606323572531</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,13 +107,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="firebase and github config" />
     <MESSAGE value="homepage form handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="homepage form handling" />
+    <MESSAGE value="getting shoes from firebase" />
+    <option name="LAST_COMMIT_MESSAGE" value="getting shoes from firebase" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1606316465208">
+    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1606323568538">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606316465208" />
+    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606323568538" />
     <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1605882798929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -121,10 +135,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="165" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606132637414" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606316692441">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606323591986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606316692441" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606323591986" />
     <state x="668" y="237" width="583" height="566" key="find.popup" timestamp="1606131132073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
