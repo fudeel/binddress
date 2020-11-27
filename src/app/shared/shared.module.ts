@@ -17,10 +17,11 @@ import {MatSelectModule} from '@angular/material/select';
 import {TutorialCardComponent} from './components/tutorial-card/tutorial-card.component';
 import {MatCardModule} from '@angular/material/card';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {AlertComponent} from './components/alert/alert.component';
 
 
 @NgModule({
-  declarations: [ToolbarComponent, CarouselComponent, DialogComponent, TutorialCardComponent],
+  declarations: [ToolbarComponent, CarouselComponent, DialogComponent, TutorialCardComponent, AlertComponent],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -52,7 +53,8 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     MatSelectModule,
     TutorialCardComponent,
     MatCardModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AlertComponent
   ]
 })
 export class SharedModule { }

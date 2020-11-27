@@ -2,31 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4f92088-5491-461e-a3ed-05f772e40fb8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.firebaserc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/firebase-hosting-merge.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/firebase-hosting-pull-request.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/binddress/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firestore.indexes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firestore.rules" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/models/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/models/item.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Items.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Users.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/items-mock.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage.rules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/screens/locale/homepage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/locale/homepage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/shared.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +75,7 @@
       <workItem from="1606316217183" duration="5694000" />
       <workItem from="1606385587305" duration="6607000" />
       <workItem from="1606469542527" duration="3156000" />
-      <workItem from="1606472816841" duration="1506000" />
+      <workItem from="1606472816841" duration="4965000" />
     </task>
     <task id="LOCAL-00001" summary="firebase and github config">
       <created>1605872022737</created>
@@ -122,23 +105,38 @@
       <option name="project" value="LOCAL" />
       <updated>1606323572531</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="project refactor">
+      <created>1606474769950</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606474769950</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="firebase and github config" />
     <MESSAGE value="homepage form handling" />
     <MESSAGE value="getting shoes from firebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="getting shoes from firebase" />
+    <MESSAGE value="project refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="project refactor" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1606323568538">
+    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1606474737155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606323568538" />
+    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606474737155" />
     <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1606472741651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -159,17 +157,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="165" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606132637414" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606323591986">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606474866175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606323591986" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606474866175" />
     <state x="666" y="237" width="583" height="566" key="find.popup" timestamp="1606470995629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="237" width="583" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606470995629" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606317269621">
+    <state x="823" y="405" width="350" height="298" key="org.angular.cli.generate" timestamp="1606475114011">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606317269621" />
+    <state x="823" y="405" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1040@0.0.1920.1040" timestamp="1606475114011" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606476582963">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606476582963" />
   </component>
 </project>

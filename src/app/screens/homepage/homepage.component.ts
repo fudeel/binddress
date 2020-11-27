@@ -7,6 +7,7 @@ import {LoadingService} from '../../shared/services/loading.service';
 import * as elements from '../../shared/elements/elements';
 import TUTORIAL_CARDS_LOCALE from '../../shared/locale/tutorial-cards';
 import {AngularFirestore} from "@angular/fire/firestore";
+import {AlertMessage} from "../../shared/components/alert/alert.component";
 
 
 interface Categories {
@@ -37,6 +38,10 @@ export class HomepageComponent implements OnInit {
     code: ['', Validators.required],
   });
 
+
+  isAlertVisible = false;
+  alertMessage: AlertMessage = new AlertMessage();
+
   constructor(private fb: FormBuilder, private readonly loadingService: LoadingService, private readonly afs: AngularFirestore) {
     this.l = localStorage.getItem('locale') ? JSON.parse(localStorage.getItem('locale')) : 0;
     this.homepageLocale = HOMEPAGE_LOCALE;
@@ -60,7 +65,18 @@ export class HomepageComponent implements OnInit {
     this.afs.collection(this.simpleSearchForm.controls.category.value, ref =>
       ref.where('itemId', '==', this.simpleSearchForm.controls.code.value)
     ).valueChanges().subscribe(res => {
-      console.log(res)
+      if (res?.length > 0) {
+        this.isAlertVisible = false
+
+      } else {
+        this.alertMessage = {
+          style: "warning",
+          title: this.homepageLocale.alertTitle[this.l],
+          message: this.homepageLocale.alertMessage[this.l]
+        }
+
+        this.isAlertVisible = true
+      }
     })
   }
 

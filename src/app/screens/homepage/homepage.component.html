@@ -30,7 +30,9 @@
     </div>
   </div>
   <div class="row bound-item">
-    <div class="col-12"></div>
+    <div class="col-12">
+      <app-alert *ngIf="isAlertVisible" [message]="alertMessage"></app-alert>
+    </div>
   </div>
 </div>
 <div class="tutorial-cards">
