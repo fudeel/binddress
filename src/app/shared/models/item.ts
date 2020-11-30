@@ -5,7 +5,7 @@ export class Item {
   itemName: string;
   itemRarity: "grey" | "white" | "green" | "blue" | "purple" | "orange";
   isBound: boolean;
-  previousOwners: [{ userId: string }];
+  previousOwners: string[]
   condition: "new" | "used";
   productionYear: string
 }

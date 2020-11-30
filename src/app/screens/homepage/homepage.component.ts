@@ -59,7 +59,6 @@ export class HomepageComponent implements OnInit {
 
 
   onSimpleSearch(): void {
-    console.log(this.simpleSearchForm);
     this.loadingService.isLoading = true;
 
     this.afs.collection(this.simpleSearchForm.controls.category.value, ref =>

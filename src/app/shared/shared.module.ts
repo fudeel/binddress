@@ -18,10 +18,11 @@ import {TutorialCardComponent} from './components/tutorial-card/tutorial-card.co
 import {MatCardModule} from '@angular/material/card';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {AlertComponent} from './components/alert/alert.component';
+import {SearchCardComponent} from './components/search-card/search-card.component';
 
 
 @NgModule({
-  declarations: [ToolbarComponent, CarouselComponent, DialogComponent, TutorialCardComponent, AlertComponent],
+  declarations: [ToolbarComponent, CarouselComponent, DialogComponent, TutorialCardComponent, AlertComponent, SearchCardComponent],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -54,7 +55,8 @@ import {AlertComponent} from './components/alert/alert.component';
     TutorialCardComponent,
     MatCardModule,
     FontAwesomeModule,
-    AlertComponent
+    AlertComponent,
+    SearchCardComponent
   ]
 })
 export class SharedModule { }

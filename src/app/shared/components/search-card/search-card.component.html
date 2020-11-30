@@ -1,0 +1,55 @@
+<mat-card *ngIf="item" class="shadow">
+  <div class="row pt-2">
+    <div class="col-auto pt-2 px-md-4">
+      <img height="50" src="assets/images/default-profile-picture.jpg" width="50">
+    </div>
+    <div class="col-auto py-3 px-md-4">
+      <div class="row">
+        <div class="col text-muted card-field-description"><p>Category</p></div>
+      </div>
+      <a>{{item.category}}</a>
+    </div>
+    <div class="col-auto py-3 px-md-4">
+      <div class="row">
+        <div class="col text-muted card-field-description"><p>Rarity</p></div>
+      </div>
+      <p [className]="
+      item.itemRarity === 'grey' ? 'item-grey' :
+      item.itemRarity === 'white' ? 'item-white' :
+      item.itemRarity === 'green' ? 'item-green' :
+      item.itemRarity === 'blue' ? 'item-blue' :
+      item.itemRarity === 'purple' ? 'item-purple' :
+      item.itemRarity === 'orange' ? 'item-orange' :
+      'item-grey'">{{item.itemRarity}}</p>
+    </div>
+    <div class="col-auto py-3 px-md-4">
+      <div class="row">
+        <div class="col text-muted card-field-description"><p>Item name</p></div>
+      </div>
+      <p class="font-weight-bolder">{{item.itemName}}</p>
+    </div>
+    <div class="col-auto py-3 px-md-4">
+      <div class="row">
+        <div class="col text-muted card-field-description"><p>Current owner</p></div>
+      </div>
+      <a>{{item.fkCurrentOwnerUuid}}</a>
+    </div>
+    <div class="col">
+      <div class="row pt-4 d-flex justify-content-center float-left">
+        <div class="col-auto">
+          <fa-icon [icon]="faBarcode" transform="shrink-9"></fa-icon>
+        </div>
+        <div class="col-auto py-2 pl-0">
+          <p>{{item.itemId}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex justify-content-end pt-4">
+      <div class="row">
+        <div class="col-12">
+          <button color="primary" mat-flat-button>Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-card>
