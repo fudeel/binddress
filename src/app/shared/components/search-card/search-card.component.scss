@@ -1,38 +1,55 @@
-.card-field-description {
-  font-size: 12px;
-
+.search-card {
   p {
-    color: lightgrey;
-    margin: 0;
+    cursor: default;
   }
-}
 
-.item-grey {
-  color: grey;
-  font-weight: bolder;
-}
+  a {
+    cursor: default;
+  }
 
-.item-white {
-  color: black;
-  font-weight: bolder;
-}
+  .card-field-description {
+    font-size: 12px;
 
-.item-green {
-  color: mediumspringgreen;
-  font-weight: bolder;
-}
+    p {
+      cursor: default;
+      color: lightgrey;
+      margin: 0;
+    }
+  }
 
-.item-blue {
-  color: midnightblue;
-  font-weight: bolder;
-}
+  .item-grey {
+    color: grey;
+    font-weight: bolder;
 
-.item-purple {
-  color: purple;
-  font-weight: bolder;
-}
+  }
 
-.item-orange {
-  color: orangered;
-  font-weight: bolder;
+  .item-white {
+    color: black;
+    font-weight: bolder;
+    cursor: default;
+  }
+
+  .item-green {
+    color: mediumspringgreen;
+    font-weight: bolder;
+    cursor: default;
+  }
+
+  .item-blue {
+    color: midnightblue;
+    font-weight: bolder;
+    cursor: default;
+  }
+
+  .item-purple {
+    color: purple;
+    font-weight: bolder;
+    cursor: default;
+  }
+
+  .item-orange {
+    color: orangered;
+    font-weight: bolder;
+    cursor: default;
+  }
 }
