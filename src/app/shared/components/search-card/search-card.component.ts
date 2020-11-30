@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Item} from "../../models/item";
 import {faBarcode} from "@fortawesome/free-solid-svg-icons";
+import SEARCH_CARD_LOCALE from '../../locale/search-card'
 
 @Component({
   selector: 'app-search-card',
@@ -8,8 +9,6 @@ import {faBarcode} from "@fortawesome/free-solid-svg-icons";
   styleUrls: ['./search-card.component.scss']
 })
 export class SearchCardComponent implements OnInit {
-
-  faBarcode = faBarcode
 
   @Input() item: Item = {
     category: "shoes",
@@ -23,7 +22,13 @@ export class SearchCardComponent implements OnInit {
     productionYear: '2020'
   }
 
+  @Input() l: number;
+
+  faBarcode = faBarcode
+  searchCardLocale = SEARCH_CARD_LOCALE
+
   constructor() {
+
   }
 
   ngOnInit(): void {

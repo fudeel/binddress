@@ -32,6 +32,7 @@ export class HomepageComponent implements OnInit {
 
   homepageLocale;
   l = 0;
+  isItem = false;
 
   simpleSearchForm = this.fb.group({
     category: ['', Validators.required],
@@ -65,9 +66,14 @@ export class HomepageComponent implements OnInit {
       ref.where('itemId', '==', this.simpleSearchForm.controls.code.value)
     ).valueChanges().subscribe(res => {
       if (res?.length > 0) {
-        this.isAlertVisible = false
+        this.isAlertVisible = false;
+        this.isItem = true;
+        this.loadingService.isLoading = false;
+
 
       } else {
+        this.loadingService.isLoading = false;
+        this.isItem = false;
         this.alertMessage = {
           style: "warning",
           title: this.homepageLocale.alertTitle[this.l],

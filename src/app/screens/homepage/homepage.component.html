@@ -31,11 +31,11 @@
     </div>
   </div>
   <div class="row bound-item">
-    <div class="col-12">
-      <app-alert *ngIf="isAlertVisible" [message]="alertMessage"></app-alert>
+    <div *ngIf="isAlertVisible" class="col-12">
+      <app-alert [message]="alertMessage"></app-alert>
     </div>
-    <div class="col-12">
-      <app-search-card></app-search-card>
+    <div *ngIf="isItem" class="col-12">
+      <app-search-card [l]="this.l"></app-search-card>
     </div>
   </div>
 </div>
