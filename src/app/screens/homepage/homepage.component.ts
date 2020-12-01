@@ -8,6 +8,7 @@ import * as elements from '../../shared/elements/elements';
 import TUTORIAL_CARDS_LOCALE from '../../shared/locale/tutorial-cards';
 import {AngularFirestore} from "@angular/fire/firestore";
 import {AlertMessage} from "../../shared/components/alert/alert.component";
+import {AngularFireStorage} from "@angular/fire/storage";
 
 
 interface Categories {
@@ -45,8 +46,9 @@ export class HomepageComponent implements OnInit {
 
   item: any;
   owner: any;
+  image: any;
 
-  constructor(private fb: FormBuilder, private readonly loadingService: LoadingService, private readonly afs: AngularFirestore) {
+  constructor(private fb: FormBuilder, private readonly loadingService: LoadingService, private readonly afs: AngularFirestore, private readonly storage: AngularFireStorage) {
     this.l = localStorage.getItem('locale') ? JSON.parse(localStorage.getItem('locale')) : 0;
     this.homepageLocale = HOMEPAGE_LOCALE;
     this.tutorialCardsSelected = this.tutorialCardsLocale[this.l];
@@ -63,10 +65,14 @@ export class HomepageComponent implements OnInit {
 
 
   onSimpleSearch() {
+    const selectedCategory = this.simpleSearchForm.controls.category.value;
+    const selectedItemId = this.simpleSearchForm.controls.code.value;
+
     let currentItem: any;
+
     this.loadingService.isLoading = true;
-    this.afs.collection(this.simpleSearchForm.controls.category.value, ref =>
-      ref.where('itemId', '==', this.simpleSearchForm.controls.code.value)
+    this.afs.collection(selectedCategory, ref =>
+      ref.where('itemId', '==', selectedItemId)
     ).valueChanges().subscribe(res => {
       if (res?.length > 0) {
         this.isAlertVisible = false;
@@ -75,6 +81,15 @@ export class HomepageComponent implements OnInit {
           let ownerInfo
           ownerInfo = res;
           currentItem.ownerInfo = ownerInfo;
+          currentItem.imagesUrl = [];
+
+          this.storage.ref(selectedCategory + '/' + currentItem?.fkCurrentOwnerUuid?.id + '/' + currentItem.itemId).listAll().subscribe(images => {
+            images.items.forEach(i => {
+              i.getDownloadURL().then(res => {
+                currentItem.imagesUrl.push(res)
+              })
+            })
+          })
 
           this.item = currentItem;
           this.loadingService.isLoading = false;
@@ -95,10 +110,4 @@ export class HomepageComponent implements OnInit {
       }
     })
   }
-
-
-  getSearchCard() {
-
-  }
-
 }
