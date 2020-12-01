@@ -5,7 +5,10 @@ const SEARCH_CARD_LOCALE = {
     currentOwner: ['Current owner', 'Attuale proprietario'],
     detailButton: ['Details', 'Dettagli'],
     verified: ['Verified', 'Verificato'],
-    notVerified: ['Not verified', 'Non verificato']
+    notVerified: ['Not verified', 'Non verificato'],
+    brand: ['Brand', 'Brand'],
+    conditions: ['Conditions', 'Condizioni']
+
   }
 ;
 

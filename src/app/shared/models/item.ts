@@ -13,4 +13,5 @@ export class Item {
   productionYear: string
   imagesUrl: string[];
   isItemVerified: boolean;
+  brand: string
 }

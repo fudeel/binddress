@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4f92088-5491-461e-a3ed-05f772e40fb8" name="Default Changelist" comment="">
+    <list default="true" id="a4f92088-5491-461e-a3ed-05f772e40fb8" name="Default Changelist" comment="workspace">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/shared/locale/search-card.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/locale/search-card.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/shared/models/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/models/item.ts" afterDir="false" />
     </list>
@@ -184,7 +180,8 @@
     <MESSAGE value="default cursor on search card" />
     <MESSAGE value="Logo import and locale on search card" />
     <MESSAGE value="Get data on search with owner info" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get data on search with owner info" />
+    <MESSAGE value="workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
