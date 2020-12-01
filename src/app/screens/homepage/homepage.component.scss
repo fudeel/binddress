@@ -1,9 +1,15 @@
 .homepage {
   position: relative;
-  margin: 14em auto auto;
+  margin: 8em auto auto;
+
+  .bound-item {
+    position: inherit;
+    min-height: 12em;
+    margin-top: 2em;
+  }
 }
 
 .tutorial-cards {
   position: relative;
-  margin: 14em auto auto;
+  margin: 2em auto auto;
 }

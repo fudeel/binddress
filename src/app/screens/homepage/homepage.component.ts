@@ -6,6 +6,8 @@ import {FormBuilder, Validators} from '@angular/forms';
 import {LoadingService} from '../../shared/services/loading.service';
 import * as elements from '../../shared/elements/elements';
 import TUTORIAL_CARDS_LOCALE from '../../shared/locale/tutorial-cards';
+import {AngularFirestore} from "@angular/fire/firestore";
+import {AlertMessage} from "../../shared/components/alert/alert.component";
 
 
 interface Categories {
@@ -30,12 +32,21 @@ export class HomepageComponent implements OnInit {
 
   homepageLocale;
   l = 0;
+  isItem = false;
 
   simpleSearchForm = this.fb.group({
+    category: ['', Validators.required],
     code: ['', Validators.required],
   });
 
-  constructor(private fb: FormBuilder, private readonly loadingService: LoadingService) {
+
+  isAlertVisible = false;
+  alertMessage: AlertMessage = new AlertMessage();
+
+  item: any;
+  owner: any;
+
+  constructor(private fb: FormBuilder, private readonly loadingService: LoadingService, private readonly afs: AngularFirestore) {
     this.l = localStorage.getItem('locale') ? JSON.parse(localStorage.getItem('locale')) : 0;
     this.homepageLocale = HOMEPAGE_LOCALE;
     this.tutorialCardsSelected = this.tutorialCardsLocale[this.l];
@@ -51,8 +62,43 @@ export class HomepageComponent implements OnInit {
   }
 
 
-  onSimpleSearch(): void {
+  onSimpleSearch() {
+    let currentItem: any;
     this.loadingService.isLoading = true;
+    this.afs.collection(this.simpleSearchForm.controls.category.value, ref =>
+      ref.where('itemId', '==', this.simpleSearchForm.controls.code.value)
+    ).valueChanges().subscribe(res => {
+      if (res?.length > 0) {
+        this.isAlertVisible = false;
+        currentItem = res[0]
+        this.afs.collection('users').doc(currentItem?.fkCurrentOwnerUuid?.id).valueChanges().subscribe(res => {
+          let ownerInfo
+          ownerInfo = res;
+          currentItem.ownerInfo = ownerInfo;
+
+          this.item = currentItem;
+          this.loadingService.isLoading = false;
+          this.isItem = true;
+        })
+
+
+      } else {
+        this.loadingService.isLoading = false;
+        this.isItem = false;
+        this.alertMessage = {
+          style: "warning",
+          title: this.homepageLocale.alertTitle[this.l],
+          message: this.homepageLocale.alertMessage[this.l]
+        }
+
+        this.isAlertVisible = true
+      }
+    })
+  }
+
+
+  getSearchCard() {
+
   }
 
 }

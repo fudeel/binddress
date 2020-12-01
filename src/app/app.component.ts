@@ -3,6 +3,7 @@ import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
 import {DialogComponent} from './shared/components/dialog/dialog.component';
 import * as elements from './shared/elements/elements';
 import {LoadingService} from './shared/services/loading.service';
+import {AngularFirestore} from "@angular/fire/firestore";
 
 @Component({
   selector: 'app-root',
@@ -13,10 +14,11 @@ export class AppComponent implements OnInit {
   title = 'bindress';
   isLoading = false;
 
-  constructor(private dialog: MatDialog, private readonly loadingService: LoadingService) {
+  constructor(private dialog: MatDialog, private readonly loadingService: LoadingService, private readonly afs: AngularFirestore) {
     loadingService.isLoading$.subscribe((loading: boolean) => {
       this.isLoading = loading;
     });
+
 
   }
 

@@ -7,7 +7,9 @@ const HOMEPAGE_LOCALE = {
     ],
     search: ['Search for bound items', 'Cerca articoli bindati'],
     searchButton: ['Search', 'Cerca'],
-    searchPlaceholder: ['Identifier', 'Codice identificatore']
+    searchPlaceholder: ['Identifier', 'Codice identificatore'],
+    alertTitle: ['Oops', 'Oops'],
+    alertMessage: ['It seems you are looking for an unregistered item. Check if you inserted the right ID Code.', 'Sembra tu stia cercando un oggetto non registrato. Controlla di aver inserito il codice correttamente']
   }
 ;
 

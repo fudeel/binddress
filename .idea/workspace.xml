@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a4f92088-5491-461e-a3ed-05f772e40fb8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/models/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/models/item.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/models/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/models/user.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="fudeel &lt;fadil_mucia@hotmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kY4VElusAaO7PXYFvu3CTJxeHR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="ts.external.directory.path" value="C:\Users\famuca\WebstormProjects\binddress\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\famuca\WebstormProjects\binddress\src\app\shared\locale" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\famuca\WebstormProjects\binddress\src\assets\images" />
+      <recent name="C:\Users\famuca\WebstormProjects\binddress\src\assets" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4f92088-5491-461e-a3ed-05f772e40fb8" name="Default Changelist" comment="" />
+      <created>1605864212642</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605864212642</updated>
+      <workItem from="1605864213781" duration="8873000" />
+      <workItem from="1606129208994" duration="3278000" />
+      <workItem from="1606298823292" duration="1659000" />
+      <workItem from="1606316217183" duration="5694000" />
+      <workItem from="1606385587305" duration="6607000" />
+      <workItem from="1606469542527" duration="3156000" />
+      <workItem from="1606472816841" duration="12506000" />
+      <workItem from="1606728863073" duration="19548000" />
+      <workItem from="1606820640791" duration="4397000" />
+    </task>
+    <task id="LOCAL-00001" summary="firebase and github config">
+      <created>1605872022737</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605872022737</updated>
+    </task>
+    <task id="LOCAL-00002" summary="homepage form handling">
+      <created>1606300031240</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606300031241</updated>
+    </task>
+    <task id="LOCAL-00003" summary="homepage form handling">
+      <created>1606316475783</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606316475783</updated>
+    </task>
+    <task id="LOCAL-00004" summary="getting shoes from firebase">
+      <created>1606323572531</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606323572531</updated>
+    </task>
+    <task id="LOCAL-00005" summary="project refactor">
+      <created>1606474769950</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606474769950</updated>
+    </task>
+    <task id="LOCAL-00006" summary="alert component management and restyling">
+      <created>1606482989988</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606482989988</updated>
+    </task>
+    <task id="LOCAL-00007" summary="css refactor in homepage">
+      <created>1606485234259</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606485234259</updated>
+    </task>
+    <task id="LOCAL-00008" summary="default profile image and search card component with items mapping">
+      <created>1606736508758</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606736508758</updated>
+    </task>
+    <task id="LOCAL-00009" summary="default cursor on search card">
+      <created>1606736861057</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606736861057</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Logo import and locale on search card">
+      <created>1606744158875</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606744158875</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="firebase and github config" />
+    <MESSAGE value="homepage form handling" />
+    <MESSAGE value="getting shoes from firebase" />
+    <MESSAGE value="project refactor" />
+    <MESSAGE value="alert component management and restyling" />
+    <MESSAGE value="css refactor in homepage" />
+    <MESSAGE value="default profile image and search card component with items mapping" />
+    <MESSAGE value="default cursor on search card" />
+    <MESSAGE value="Logo import and locale on search card" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logo import and locale on search card" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1606744152742">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606744152742" />
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1606472741651">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606472741651" />
+    <state width="1899" height="275" key="GridCell.Tab.0.center" timestamp="1606472741651">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606472741651" />
+    <state width="1899" height="275" key="GridCell.Tab.0.left" timestamp="1606472741651">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606472741651" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right" timestamp="1606472741651">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606472741651" />
+    <state x="756" y="165" key="RollbackChangesDialog" timestamp="1606132637414">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="756" y="165" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606132637414" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606744166165">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606744166165" />
+    <state x="666" y="237" width="583" height="566" key="find.popup" timestamp="1606826734110">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="666" y="237" width="583" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606826734110" />
+    <state x="823" y="405" width="350" height="298" key="org.angular.cli.generate" timestamp="1606731287186">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="823" y="405" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1040@0.0.1920.1040" timestamp="1606731287186" />
+    <state x="617" y="246" key="run.anything.popup" timestamp="1606821089763">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="617" y="246" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606821089763" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606731611797">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606731611797" />
+  </component>
+</project>

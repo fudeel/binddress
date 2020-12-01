@@ -1,7 +1,4 @@
 {
-  "projects": {
-    "default": "binddress00"
-  },
   "targets": {
     "binddress00": {
       "hosting": {
