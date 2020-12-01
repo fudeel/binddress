@@ -11,4 +11,6 @@ export class Item {
   previousOwners: string[]
   condition: "new" | "used";
   productionYear: string
+  imagesUrl: string[];
+  isItemVerified: boolean;
 }

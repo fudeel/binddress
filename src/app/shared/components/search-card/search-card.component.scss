@@ -7,6 +7,34 @@
     cursor: default;
   }
 
+  .not-verified {
+    p {
+      cursor: default;
+      color: lightgrey;
+      margin: 0;
+    }
+
+    fa-icon.ng-fa-icon {
+      cursor: default;
+      color: lightgrey;
+      margin: 0;
+    }
+  }
+
+  .verified {
+    p {
+      cursor: default;
+      color: #458eff;
+      margin: 0;
+    }
+
+    fa-icon.ng-fa-icon {
+      cursor: default;
+      color: #458eff;
+      margin: 0;
+    }
+  }
+
   .card-field-description {
     font-size: 12px;
 
@@ -51,5 +79,11 @@
     color: orangered;
     font-weight: bolder;
     cursor: default;
+  }
+
+  .custom-align {
+    position: relative;
+    right: 20px;
+    top: 4px;
   }
 }

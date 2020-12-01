@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Item} from "../../models/item";
-import {faBarcode} from "@fortawesome/free-solid-svg-icons";
+import {faBarcode, faCertificate} from "@fortawesome/free-solid-svg-icons";
 import SEARCH_CARD_LOCALE from '../../locale/search-card'
 
 @Component({
@@ -15,6 +15,7 @@ export class SearchCardComponent implements OnInit {
   @Input() l: number;
 
   faBarcode = faBarcode
+  faCertificate = faCertificate
   searchCardLocale = SEARCH_CARD_LOCALE
 
   constructor() {

@@ -3,12 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a4f92088-5491-461e-a3ed-05f772e40fb8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/locale/search-card.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/locale/search-card.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/shared/models/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/models/item.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/models/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/models/user.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +23,9 @@
         <option value="TypeScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -80,7 +84,7 @@
       <workItem from="1606469542527" duration="3156000" />
       <workItem from="1606472816841" duration="12506000" />
       <workItem from="1606728863073" duration="19548000" />
-      <workItem from="1606820640791" duration="4397000" />
+      <workItem from="1606820640791" duration="13250000" />
     </task>
     <task id="LOCAL-00001" summary="firebase and github config">
       <created>1605872022737</created>
@@ -152,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606744158875</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Get data on search with owner info">
+      <created>1606826776318</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1606826776318</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,16 +183,17 @@
     <MESSAGE value="default profile image and search card component with items mapping" />
     <MESSAGE value="default cursor on search card" />
     <MESSAGE value="Logo import and locale on search card" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logo import and locale on search card" />
+    <MESSAGE value="Get data on search with owner info" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get data on search with owner info" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1606744152742">
+    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1606826771566">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606744152742" />
+    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606826771566" />
     <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1606472741651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -202,10 +214,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="165" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606132637414" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606744166165">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606826782455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606744166165" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606826782455" />
     <state x="666" y="237" width="583" height="566" key="find.popup" timestamp="1606826734110">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -214,10 +226,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="823" y="405" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1040@0.0.1920.1040" timestamp="1606731287186" />
-    <state x="617" y="246" key="run.anything.popup" timestamp="1606821089763">
+    <state x="617" y="246" key="run.anything.popup" timestamp="1606835732546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="617" y="246" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606821089763" />
+    <state x="617" y="246" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606835732546" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606731611797">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
