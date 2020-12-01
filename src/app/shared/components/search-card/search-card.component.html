@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col text-muted card-field-description"><p>{{searchCardLocale.category[l]}}</p></div>
       </div>
-      <a>{{item.category}}</a>
+      <a>{{item?.category | titlecase}}</a>
     </div>
     <div class="col-auto py-3 px-md-4">
       <div class="row">
@@ -20,19 +20,19 @@
       item.itemRarity === 'blue' ? 'item-blue' :
       item.itemRarity === 'purple' ? 'item-purple' :
       item.itemRarity === 'orange' ? 'item-orange' :
-      'item-grey'">{{item.itemRarity}}</p>
+      'item-grey'">{{item?.itemRarity | titlecase}}</p>
     </div>
     <div class="col-auto py-3 px-md-4">
       <div class="row">
         <div class="col text-muted card-field-description"><p>{{searchCardLocale.itemName[l]}}</p></div>
       </div>
-      <p class="font-weight-bolder">{{item.itemName}}</p>
+      <p class="font-weight-bolder">{{item?.itemName | titlecase}}</p>
     </div>
     <div class="col-auto py-3 px-md-4">
       <div class="row">
         <div class="col text-muted card-field-description"><p>{{searchCardLocale.currentOwner[l]}}</p></div>
       </div>
-      <a>{{item.fkCurrentOwnerUuid}}</a>
+      <a>{{item?.ownerInfo?.username | titlecase}}</a>
     </div>
     <div class="col">
       <div class="row pt-4 d-flex justify-content-center float-left">
@@ -40,7 +40,7 @@
           <fa-icon [icon]="faBarcode" transform="shrink-9"></fa-icon>
         </div>
         <div class="col-auto py-2 pl-0">
-          <p>{{item.itemId}}</p>
+          <p>{{item?.itemId | titlecase}}</p>
         </div>
       </div>
     </div>

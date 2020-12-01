@@ -43,6 +43,9 @@ export class HomepageComponent implements OnInit {
   isAlertVisible = false;
   alertMessage: AlertMessage = new AlertMessage();
 
+  item: any;
+  owner: any;
+
   constructor(private fb: FormBuilder, private readonly loadingService: LoadingService, private readonly afs: AngularFirestore) {
     this.l = localStorage.getItem('locale') ? JSON.parse(localStorage.getItem('locale')) : 0;
     this.homepageLocale = HOMEPAGE_LOCALE;
@@ -59,16 +62,24 @@ export class HomepageComponent implements OnInit {
   }
 
 
-  onSimpleSearch(): void {
+  onSimpleSearch() {
+    let currentItem: any;
     this.loadingService.isLoading = true;
-
     this.afs.collection(this.simpleSearchForm.controls.category.value, ref =>
       ref.where('itemId', '==', this.simpleSearchForm.controls.code.value)
     ).valueChanges().subscribe(res => {
       if (res?.length > 0) {
         this.isAlertVisible = false;
-        this.isItem = true;
-        this.loadingService.isLoading = false;
+        currentItem = res[0]
+        this.afs.collection('users').doc(currentItem?.fkCurrentOwnerUuid?.id).valueChanges().subscribe(res => {
+          let ownerInfo
+          ownerInfo = res;
+          currentItem.ownerInfo = ownerInfo;
+
+          this.item = currentItem;
+          this.loadingService.isLoading = false;
+          this.isItem = true;
+        })
 
 
       } else {
@@ -83,6 +94,11 @@ export class HomepageComponent implements OnInit {
         this.isAlertVisible = true
       }
     })
+  }
+
+
+  getSearchCard() {
+
   }
 
 }

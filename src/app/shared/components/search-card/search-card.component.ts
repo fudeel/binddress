@@ -10,17 +10,7 @@ import SEARCH_CARD_LOCALE from '../../locale/search-card'
 })
 export class SearchCardComponent implements OnInit {
 
-  @Input() item: Item = {
-    category: "shoes",
-    condition: "new",
-    fkCurrentOwnerUuid: '123456',
-    isBound: true,
-    itemId: '123456',
-    itemName: 'Black Nike',
-    itemRarity: 'purple',
-    previousOwners: ['1234', '5678'],
-    productionYear: '2020'
-  }
+  @Input() item: Item;
 
   @Input() l: number;
 
@@ -32,8 +22,6 @@ export class SearchCardComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
-    console.log(this.item)
   }
 
 }

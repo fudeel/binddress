@@ -3,5 +3,6 @@ export class User {
   lastName: string;
   country: string;
   email: string;
-  boundItems: [{itemId: string}];
+  username: string;
+  boundItems?: [{ itemId: string }];
 }
