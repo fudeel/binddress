@@ -10,6 +10,7 @@ import {AlertMessage} from "../../shared/components/alert/alert.component";
 import {AngularFireStorage} from "@angular/fire/storage";
 import {LocaleService} from "../../shared/services/locale.service";
 import {Router} from "@angular/router";
+import {ItemDetailService} from "../../shared/services/item-detail.service";
 
 
 interface Categories {
@@ -54,7 +55,8 @@ export class HomepageComponent implements OnInit {
               private readonly loadingService: LoadingService,
               private readonly afs: AngularFirestore,
               private readonly storage: AngularFireStorage,
-              private readonly localeService: LocaleService) {
+              private readonly localeService: LocaleService,
+              private readonly itemDetailService: ItemDetailService) {
     this.localeService.getLanguageValue().subscribe(l => {
       this.l = l
     })
@@ -120,6 +122,7 @@ export class HomepageComponent implements OnInit {
 
 
   onGoDetail(event) {
+    this.itemDetailService.itemInfo = this.item;
     this.router.navigate(['detail', event.fkCurrentOwnerUuid.id + '/' + event.category + '/' + event.itemId])
   }
 }

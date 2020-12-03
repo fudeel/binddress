@@ -3,6 +3,7 @@ import {ActivatedRoute, Params} from "@angular/router";
 import {AngularFirestore} from "@angular/fire/firestore";
 import {AngularFireStorage} from "@angular/fire/storage";
 import {Item} from "../../shared/models/item";
+import {ItemDetailService} from "../../shared/services/item-detail.service";
 
 @Component({
   selector: 'app-detail',
@@ -14,7 +15,10 @@ export class DetailComponent implements OnInit {
   item: string[];
   itemInfo: Item;
 
-  constructor(private readonly activatedRoute: ActivatedRoute, private readonly afs: AngularFirestore, private readonly storage: AngularFireStorage) {
+  constructor(private readonly activatedRoute: ActivatedRoute,
+              private readonly afs: AngularFirestore,
+              private readonly storage: AngularFireStorage,
+              private readonly itemDetailService: ItemDetailService) {
   }
 
   ngOnInit(): void {
@@ -22,7 +26,13 @@ export class DetailComponent implements OnInit {
       this.item = params.item.split("/")
       console.log(this.item)
 
-      this.getItemDetail()
+      this.itemDetailService.getItemInfo().subscribe(detail => {
+        if (detail?.itemId) {
+          this.itemInfo = detail
+        } else {
+          this.getItemDetail()
+        }
+      })
     })
   }
 
