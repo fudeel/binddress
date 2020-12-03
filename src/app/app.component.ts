@@ -4,6 +4,7 @@ import {DialogComponent} from './shared/components/dialog/dialog.component';
 import * as elements from './shared/elements/elements';
 import {LoadingService} from './shared/services/loading.service';
 import {AngularFirestore} from "@angular/fire/firestore";
+import {LocaleService} from "./shared/services/locale.service";
 
 @Component({
   selector: 'app-root',
@@ -13,11 +14,19 @@ import {AngularFirestore} from "@angular/fire/firestore";
 export class AppComponent implements OnInit {
   title = 'bindress';
   isLoading = false;
+  localeValue = 0
 
-  constructor(private dialog: MatDialog, private readonly loadingService: LoadingService, private readonly afs: AngularFirestore) {
+  constructor(private dialog: MatDialog,
+              private readonly loadingService: LoadingService,
+              private readonly afs: AngularFirestore,
+              private readonly localeService: LocaleService) {
     loadingService.isLoading$.subscribe((loading: boolean) => {
       this.isLoading = loading;
     });
+
+    localeService.locale$.subscribe((localeValue: number) => {
+      this.localeValue = localeValue
+    })
 
 
   }
@@ -27,6 +36,7 @@ export class AppComponent implements OnInit {
     const localStorageValue = localStorage.getItem('locale');
     const locale = elements.getLocaleFromLocalStorage();
     if (localStorageValue) {
+      this.localeService.localeNumber = localStorageValue;
     } else {
       this.openDialog();
     }

@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import TOOLBAR_LOCALE from '../../locale/toolbar'
+import {LocaleService} from "../../services/locale.service";
+
 @Component({
   selector: 'app-toolbar',
   templateUrl: './toolbar.component.html',
@@ -7,10 +9,15 @@ import TOOLBAR_LOCALE from '../../locale/toolbar'
 })
 export class ToolbarComponent implements OnInit {
 
-  locale = []
+  toolbarLocale = TOOLBAR_LOCALE
+  l: number = 0;
 
-  constructor() {
-    this.locale = TOOLBAR_LOCALE
+  constructor(private readonly localeService: LocaleService) {
+    this.localeService.locale$.subscribe(l => {
+      this.l = l
+
+      console.log('language: ', this.l);
+    })
   }
 
   ngOnInit(): void {

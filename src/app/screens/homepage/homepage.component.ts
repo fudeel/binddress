@@ -4,11 +4,11 @@ import CATEGORY_LOCALE from '../../shared/locale/category';
 import CATEGORY_LIST_LOCALE from '../../shared/locale/category-list';
 import {FormBuilder, Validators} from '@angular/forms';
 import {LoadingService} from '../../shared/services/loading.service';
-import * as elements from '../../shared/elements/elements';
 import TUTORIAL_CARDS_LOCALE from '../../shared/locale/tutorial-cards';
 import {AngularFirestore} from "@angular/fire/firestore";
 import {AlertMessage} from "../../shared/components/alert/alert.component";
 import {AngularFireStorage} from "@angular/fire/storage";
+import {LocaleService} from "../../shared/services/locale.service";
 
 
 interface Categories {
@@ -26,13 +26,13 @@ export class HomepageComponent implements OnInit {
 
   categoryLocale = CATEGORY_LOCALE;
   categoryListLocale = CATEGORY_LIST_LOCALE;
-  tutorialCardsLocale = TUTORIAL_CARDS_LOCALE;
+  tutorialCardsLocale = TUTORIAL_CARDS_LOCALE
 
   categories: Categories[] = [];
   tutorialCardsSelected = [];
 
-  homepageLocale;
-  l = 0;
+  homepageLocale = HOMEPAGE_LOCALE
+  l: number = 0;
   isItem = false;
 
   simpleSearchForm = this.fb.group({
@@ -48,19 +48,24 @@ export class HomepageComponent implements OnInit {
   owner: any;
   image: any;
 
-  constructor(private fb: FormBuilder, private readonly loadingService: LoadingService, private readonly afs: AngularFirestore, private readonly storage: AngularFireStorage) {
-    this.l = localStorage.getItem('locale') ? JSON.parse(localStorage.getItem('locale')) : 0;
-    this.homepageLocale = HOMEPAGE_LOCALE;
-    this.tutorialCardsSelected = this.tutorialCardsLocale[this.l];
+  constructor(private fb: FormBuilder,
+              private readonly loadingService: LoadingService,
+              private readonly afs: AngularFirestore,
+              private readonly storage: AngularFireStorage,
+              private readonly localeService: LocaleService) {
+    this.localeService.getLanguageValue().subscribe(l => {
+      this.l = l
+    })
 
   }
 
   ngOnInit(): void {
-    const localeValue = elements.getLocaleFromLocalStorage();
 
-    this.categoryListLocale[localeValue].forEach(c => {
+    this.categoryListLocale[this.l].forEach(c => {
       this.categories.push({value: c.id, viewValue: c.value});
     });
+
+    this.tutorialCardsSelected = this.tutorialCardsLocale[this.l];
   }
 
 

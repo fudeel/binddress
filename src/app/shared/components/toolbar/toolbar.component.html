@@ -1,8 +1,10 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
-        <span>{{locale[0].appName}}</span>
-        <span class="example-spacer"></span>
-        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user
-        </mat-icon>
+      <span>{{toolbarLocale.appName[l]}}</span>
+      <span class="example-spacer"></span>
+      <button [disabled]="true" color="primary" mat-flat-button>{{toolbarLocale.wts[l]}}</button>
+      <button [disabled]="true" color="primary" mat-flat-button>{{toolbarLocale.wtb[l]}}</button>
+      <button [disabled]="true" color="primary" mat-flat-button>{{toolbarLocale.faq[l]}}</button>
+      <button color="primary" mat-flat-button>{{toolbarLocale.login[l]}}</button>
     </mat-toolbar-row>
 </mat-toolbar>
