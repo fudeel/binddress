@@ -9,6 +9,7 @@ import {AngularFirestore} from "@angular/fire/firestore";
 import {AlertMessage} from "../../shared/components/alert/alert.component";
 import {AngularFireStorage} from "@angular/fire/storage";
 import {LocaleService} from "../../shared/services/locale.service";
+import {Router} from "@angular/router";
 
 
 interface Categories {
@@ -49,6 +50,7 @@ export class HomepageComponent implements OnInit {
   image: any;
 
   constructor(private fb: FormBuilder,
+              private readonly router: Router,
               private readonly loadingService: LoadingService,
               private readonly afs: AngularFirestore,
               private readonly storage: AngularFireStorage,
@@ -114,5 +116,10 @@ export class HomepageComponent implements OnInit {
         this.isAlertVisible = true
       }
     })
+  }
+
+
+  onGoDetail(event) {
+    this.router.navigate(['detail', event.fkCurrentOwnerUuid.id + '/' + event.category + '/' + event.itemId])
   }
 }

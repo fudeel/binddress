@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Item} from "../../models/item";
 import {faBarcode, faCertificate} from "@fortawesome/free-solid-svg-icons";
 import SEARCH_CARD_LOCALE from '../../locale/search-card'
@@ -11,8 +11,9 @@ import SEARCH_CARD_LOCALE from '../../locale/search-card'
 export class SearchCardComponent implements OnInit {
 
   @Input() item: Item;
-
   @Input() l: number;
+
+  @Output() goDetail: EventEmitter<Item> = new EventEmitter<Item>()
 
   faBarcode = faBarcode
   faCertificate = faCertificate
@@ -25,4 +26,7 @@ export class SearchCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onGoDetail() {
+    this.goDetail.emit(this.item);
+  }
 }

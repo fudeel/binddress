@@ -16,14 +16,12 @@ export class LocaleService {
   }
 
   set localeNumber(newValue) {
-    console.log('set locale value: ', newValue)
     this.locale$ = newValue;
     this.localeSubject.next(newValue);
   }
 
 
   getLanguageValue(): Observable<any> {
-    console.log("service", this.locale$);
     return of(this.locale$);
   }
 }

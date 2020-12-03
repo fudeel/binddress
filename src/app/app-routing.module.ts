@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
   {
@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'homepage',
     loadChildren: () => import('./screens/homepage/homepage.module').then(m => m.HomepageModule)
+  },
+  {
+    path: 'detail/:item',
+    loadChildren: () => import('./screens/detail/detail.module').then(m => m.DetailModule)
   },
 ];
 
