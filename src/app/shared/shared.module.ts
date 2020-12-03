@@ -1,11 +1,8 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
-
-import {ToolbarComponent} from './components/toolbar/toolbar.component';
 import {CarouselComponent} from './components/carousel/carousel.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
@@ -19,10 +16,12 @@ import {MatCardModule} from '@angular/material/card';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {AlertComponent} from './components/alert/alert.component';
 import {SearchCardComponent} from './components/search-card/search-card.component';
+import {FlexLayoutModule} from "@angular/flex-layout";
+import {MatSidenavModule} from "@angular/material/sidenav";
 
 
 @NgModule({
-  declarations: [ToolbarComponent, CarouselComponent, DialogComponent, TutorialCardComponent, AlertComponent, SearchCardComponent],
+  declarations: [CarouselComponent, DialogComponent, TutorialCardComponent, AlertComponent, SearchCardComponent],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -36,13 +35,14 @@ import {SearchCardComponent} from './components/search-card/search-card.componen
     MatProgressBarModule,
     MatSelectModule,
     MatCardModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FlexLayoutModule,
+    MatSidenavModule
   ],
   exports: [
     MatToolbarModule,
     MatGridListModule,
     MatIconModule,
-    ToolbarComponent,
     CarouselComponent,
     FormsModule,
     ReactiveFormsModule,
@@ -56,7 +56,9 @@ import {SearchCardComponent} from './components/search-card/search-card.componen
     MatCardModule,
     FontAwesomeModule,
     AlertComponent,
-    SearchCardComponent
+    SearchCardComponent,
+    FlexLayoutModule,
+    MatSidenavModule
   ]
 })
 export class SharedModule { }

@@ -1,7 +1,40 @@
-<app-toolbar></app-toolbar>
-<div class="loading-spinner">
-  <mat-progress-bar *ngIf="isLoading" mode="indeterminate"></mat-progress-bar>
-</div>
-<div class="container-fluid">
-  <router-outlet></router-outlet>
-</div>
+<mat-toolbar color="primary">
+  <div fxHide.gt-sm="true" fxShow="true">
+    <button (click)="sidenav.toggle()" mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+  <a class="companyName" mat-button routerLink="/">
+    <span>Site name</span>
+  </a>
+  <span class="example-spacer"></span>
+  <div fxHide.lt-md="true" fxShow="true">
+    <a mat-button routerLink="/about-us">About us</a>
+    <a mat-button routerLink="/prices">Prices</a>
+    <a mat-button routerLink="/start-page">Start page</a>
+    <a mat-button routerLink="/offer">Offer</a>
+    <a mat-button routerLink="/contact">Contact</a>
+  </div>
+
+</mat-toolbar>
+<mat-sidenav-container class="example-container" fxFlexFill>
+
+  <mat-sidenav #sidenav color="primary" fxHide.gt-sm="true" fxLayout="column" mode="over" opened="false">
+    <div fxLayout="column">
+      <a mat-button routerLink="/about-us">About us</a>
+      <a mat-button routerLink="/prices">Prices</a>
+      <a mat-button routerLink="/start-page">Start page</a>
+      <a mat-button routerLink="/offer">Offer</a>
+      <a mat-button routerLink="/contact">Contact</a>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content fxFlexFill>
+    <div class="loading-spinner">
+      <mat-progress-bar *ngIf="isLoading" mode="indeterminate"></mat-progress-bar>
+    </div>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
