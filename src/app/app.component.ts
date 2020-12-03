@@ -5,6 +5,7 @@ import * as elements from './shared/elements/elements';
 import {LoadingService} from './shared/services/loading.service';
 import {AngularFirestore} from "@angular/fire/firestore";
 import {LocaleService} from "./shared/services/locale.service";
+import TOOLBAR_LOCALE from "./shared/locale/toolbar";
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,8 @@ export class AppComponent implements OnInit {
   title = 'bindress';
   isLoading = false;
   localeValue = 0
+
+  toolbarLocale = TOOLBAR_LOCALE
 
   constructor(private dialog: MatDialog,
               private readonly loadingService: LoadingService,

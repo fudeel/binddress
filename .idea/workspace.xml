@@ -2,16 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4f92088-5491-461e-a3ed-05f772e40fb8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.ZGlzdFxiaW5kcmVzcw.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.ZGlzdFxiaW5kcmVzcw.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebaserc" beforeDir="false" afterPath="$PROJECT_DIR$/.firebaserc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bindress/3rdpartylicenses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/5.87808b42d623e45199e0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/assets/binddress-theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bindress/assets/binddress-theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/assets/images/binddress_logo_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/assets/images/binddress_logo_1_purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/assets/images/binddress_logo_1_red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bindress/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/main.621864894a723a8f7bdd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/runtime.0a579ca3d8c7c7a1e3d0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/styles.15d63b54dd202bcb510f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/components/toolbar/toolbar.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/components/toolbar/toolbar.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/components/toolbar/toolbar.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/shared.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/locale/toolbar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/locale/toolbar.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/binddress-theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/binddress-theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/binddress_logo_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/binddress_logo_1_purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/binddress_logo_1_red.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,12 +73,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\famuca\WebstormProjects\binddress\src\app\shared\locale" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\famuca\WebstormProjects\binddress\src\assets\images" />
       <recent name="C:\Users\famuca\WebstormProjects\binddress\src\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\famuca\WebstormProjects\binddress\src\app\shared\locale" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -172,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606995545136</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="menu with sidenav">
+      <created>1606996812213</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1606996812213</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,16 +213,17 @@
     <MESSAGE value="Get data on search with owner info" />
     <MESSAGE value="workspace" />
     <MESSAGE value="created locale service to manage the language at application level" />
-    <option name="LAST_COMMIT_MESSAGE" value="created locale service to manage the language at application level" />
+    <MESSAGE value="menu with sidenav" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu with sidenav" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1606995541354">
+    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1606996805536">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606995541354" />
+    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606996805536" />
     <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1606472741651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -225,10 +244,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="165" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606132637414" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606995554538">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606996821009">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606995554538" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606996821009" />
     <state x="666" y="237" width="583" height="566" key="find.popup" timestamp="1606991299945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,9 +1,12 @@
 const TOOLBAR_LOCALE = {
   appName: ['Bind Dress', 'Bind Dress'],
-  wts: ['WTS', 'WTS'],
-  wtb: ['WTB', 'WTB'],
+  homepage: ['Homepage', 'Homepage'],
+  wts: ['Sell', 'Vendi'],
+  wtb: ['Buy', 'Compra'],
   faq: ['FAQ', 'FAQ'],
   login: ['Login', 'Login'],
+  about: ['About us', 'Chi siamo'],
+  contact: ['Contact', 'Contatti'],
   profile: ['Profile', 'Profilo']
 };
 

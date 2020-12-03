@@ -6,15 +6,15 @@
   </div>
 
   <a class="companyName" mat-button routerLink="/">
-    <span>Site name</span>
+    <span>{{toolbarLocale.appName[localeValue]}}</span>
   </a>
   <span class="example-spacer"></span>
   <div fxHide.lt-md="true" fxShow="true">
-    <a mat-button routerLink="/about-us">About us</a>
-    <a mat-button routerLink="/prices">Prices</a>
-    <a mat-button routerLink="/start-page">Start page</a>
-    <a mat-button routerLink="/offer">Offer</a>
-    <a mat-button routerLink="/contact">Contact</a>
+    <a mat-button routerLink="/about-us">{{toolbarLocale.homepage[localeValue]}}</a>
+    <a mat-button routerLink="/prices">{{toolbarLocale.wts[localeValue]}}</a>
+    <a mat-button routerLink="/start-page">{{toolbarLocale.wtb[localeValue]}}</a>
+    <a mat-button routerLink="/offer">{{toolbarLocale.about[localeValue]}}</a>
+    <a mat-button routerLink="/contact">{{toolbarLocale.contact[localeValue]}}</a>
   </div>
 
 </mat-toolbar>
@@ -22,11 +22,11 @@
 
   <mat-sidenav #sidenav color="primary" fxHide.gt-sm="true" fxLayout="column" mode="over" opened="false">
     <div fxLayout="column">
-      <a mat-button routerLink="/about-us">About us</a>
-      <a mat-button routerLink="/prices">Prices</a>
-      <a mat-button routerLink="/start-page">Start page</a>
-      <a mat-button routerLink="/offer">Offer</a>
-      <a mat-button routerLink="/contact">Contact</a>
+      <a mat-button routerLink="/about-us">{{toolbarLocale.homepage[localeValue]}}</a>
+      <a mat-button routerLink="/prices">{{toolbarLocale.wts[localeValue]}}</a>
+      <a mat-button routerLink="/start-page">{{toolbarLocale.wtb[localeValue]}}</a>
+      <a mat-button routerLink="/offer">{{toolbarLocale.about[localeValue]}}</a>
+      <a mat-button routerLink="/contact">{{toolbarLocale.contact[localeValue]}}</a>
     </div>
   </mat-sidenav>
   <mat-sidenav-content fxFlexFill>
