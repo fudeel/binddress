@@ -4,6 +4,8 @@ import {AngularFirestore} from "@angular/fire/firestore";
 import {AngularFireStorage} from "@angular/fire/storage";
 import {Item} from "../../shared/models/item";
 import {ItemDetailService} from "../../shared/services/item-detail.service";
+import DETAIL_LOCALE from '../locale/detail';
+import {LocaleService} from "../../shared/services/locale.service";
 
 @Component({
   selector: 'app-detail',
@@ -14,11 +16,17 @@ export class DetailComponent implements OnInit {
 
   item: string[];
   itemInfo: Item;
+  detailLocale = DETAIL_LOCALE;
+  l: number = 0;
 
   constructor(private readonly activatedRoute: ActivatedRoute,
               private readonly afs: AngularFirestore,
               private readonly storage: AngularFireStorage,
-              private readonly itemDetailService: ItemDetailService) {
+              private readonly itemDetailService: ItemDetailService,
+              private readonly localeService: LocaleService,) {
+    this.localeService.getLanguageValue().subscribe(l => {
+      this.l = l
+    })
   }
 
   ngOnInit(): void {
@@ -29,6 +37,7 @@ export class DetailComponent implements OnInit {
       this.itemDetailService.getItemInfo().subscribe(detail => {
         if (detail?.itemId) {
           this.itemInfo = detail
+          console.log('loading data from app: ', this.itemInfo)
         } else {
           this.getItemDetail()
         }
@@ -60,14 +69,10 @@ export class DetailComponent implements OnInit {
           })
 
           this.itemInfo = currentItem;
+          console.log('downloading from firebase: ', this.itemInfo)
         })
-
-
       }
     })
-
-
   }
-
 
 }
