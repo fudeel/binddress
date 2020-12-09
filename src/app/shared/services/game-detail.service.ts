@@ -17,9 +17,6 @@ export class GameDetailService {
 
 
   set gameInfo(newValue) {
-
-    console.log('set item info: ', newValue);
-
     this.game$ = newValue;
     this.gameSubject.next(newValue);
   }

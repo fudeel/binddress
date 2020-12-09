@@ -32,13 +32,10 @@ export class DetailComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params: Params) => {
       this.urls = params.item.split("/")
-      console.log(this.urls)
 
       this.gameDetailService.getGameInfo().subscribe(detail => {
-        console.log('detail: ', detail);
         if (detail?.gameId) {
           this.game = detail
-          console.log('loading data from app: ', this.game)
         } else {
           this.getItemDetail()
         }

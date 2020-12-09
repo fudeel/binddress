@@ -88,14 +88,12 @@ export class HomepageComponent implements OnInit {
         currentItem = res[0]
         this.afs.collection('users').doc(currentItem?.createdBy?.id).valueChanges().subscribe(res => {
 
-          console.log('res: ', res)
           let organizerInfo
           organizerInfo = res;
           currentItem.organizerInfo = organizerInfo;
           currentItem.imagesUrl = [];
 
           this.game = currentItem;
-          console.log('item: ', this.game);
           this.loadingService.isLoading = false;
           this.isGame = true;
         })
@@ -117,7 +115,6 @@ export class HomepageComponent implements OnInit {
 
 
   onGoDetail(event) {
-    console.log('event on go detail click: ', event)
     this.gameDetailService.gameInfo = this.game;
     this.router.navigate(['detail', event.organizerInfo.username + '/' + event.gameCategory + '/' + event.gameId])
   }
