@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Params} from "@angular/router";
 import {AngularFirestore} from "@angular/fire/firestore";
 import {AngularFireStorage} from "@angular/fire/storage";
-import {Item} from "../../shared/models/item";
+import {Game} from "../../shared/models/game";
 import {ItemDetailService} from "../../shared/services/item-detail.service";
 import DETAIL_LOCALE from '../locale/detail';
 import {LocaleService} from "../../shared/services/locale.service";
@@ -15,7 +15,7 @@ import {LocaleService} from "../../shared/services/locale.service";
 export class DetailComponent implements OnInit {
 
   item: string[];
-  itemInfo: Item;
+  game: Game;
   detailLocale = DETAIL_LOCALE;
   l: number = 0;
 
@@ -36,8 +36,8 @@ export class DetailComponent implements OnInit {
 
       this.itemDetailService.getItemInfo().subscribe(detail => {
         if (detail?.itemId) {
-          this.itemInfo = detail
-          console.log('loading data from app: ', this.itemInfo)
+          this.game = detail
+          console.log('loading data from app: ', this.game)
         } else {
           this.getItemDetail()
         }
@@ -68,8 +68,8 @@ export class DetailComponent implements OnInit {
             })
           })
 
-          this.itemInfo = currentItem;
-          console.log('downloading from firebase: ', this.itemInfo)
+          this.game = currentItem;
+          console.log('downloading from firebase: ', this.game)
         })
       }
     })

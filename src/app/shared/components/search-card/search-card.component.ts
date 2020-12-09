@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Item} from "../../models/item";
-import {faBarcode, faCertificate} from "@fortawesome/free-solid-svg-icons";
+import {faBarcode, faCertificate, faFutbol, faTableTennis} from "@fortawesome/free-solid-svg-icons";
 import SEARCH_CARD_LOCALE from '../../locale/search-card'
+import {Game} from "../../models/game";
 
 @Component({
   selector: 'app-search-card',
@@ -10,14 +10,16 @@ import SEARCH_CARD_LOCALE from '../../locale/search-card'
 })
 export class SearchCardComponent implements OnInit {
 
-  @Input() item: Item;
+  @Input() game: Game;
   @Input() l: number;
 
-  @Output() goDetail: EventEmitter<Item> = new EventEmitter<Item>()
+  @Output() goDetail: EventEmitter<Game> = new EventEmitter<Game>()
 
   faBarcode = faBarcode
   faCertificate = faCertificate
   searchCardLocale = SEARCH_CARD_LOCALE
+  faTableTennis = faTableTennis
+  faFutbol = faFutbol
 
   constructor() {
 
@@ -27,6 +29,6 @@ export class SearchCardComponent implements OnInit {
   }
 
   onGoDetail() {
-    this.goDetail.emit(this.item);
+    this.goDetail.emit(this.game);
   }
 }

@@ -1,17 +1,17 @@
 import {Injectable} from '@angular/core';
 import {Observable, of, Subject} from "rxjs";
-import {Item} from "../models/item";
+import {Game} from "../models/game";
 
 @Injectable({
   providedIn: 'root'
 })
 export class ItemDetailService {
 
-  item$: Observable<Item>;
-  private itemSubject: Subject<Item>;
+  item$: Observable<Game>;
+  private itemSubject: Subject<Game>;
 
   constructor() {
-    this.itemSubject = new Subject<Item>();
+    this.itemSubject = new Subject<Game>();
     this.item$ = this.itemSubject.asObservable();
   }
 

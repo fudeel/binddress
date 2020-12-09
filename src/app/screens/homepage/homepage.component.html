@@ -8,7 +8,7 @@
           </div>
         </div>
         <div class="row d-flex justify-content-center">
-          <div class="col-auto">
+          <div class="col-12 col-md-auto">
             <mat-form-field appearance="fill">
               <mat-label>{{categoryLocale[0].category[l]}}</mat-label>
               <mat-select formControlName="category">
@@ -18,12 +18,12 @@
               </mat-select>
             </mat-form-field>
           </div>
-          <div class="col-auto">
+          <div class="col-12 align-self-center col-md-auto">
             <mat-form-field class="example-full-width">
               <input [placeholder]="homepageLocale.searchPlaceholder[l]" matInput formControlName="code">
             </mat-form-field>
           </div>
-          <div class="col-auto py-3">
+          <div class="col-12 col-md-auto py-3">
             <button (click)="onSimpleSearch()" [disabled]="simpleSearchForm.status === 'INVALID'" color="primary"
                     mat-raised-button
                     type="button">{{homepageLocale.searchButton[l]}}</button>
@@ -36,15 +36,15 @@
     <div *ngIf="isAlertVisible" class="col-12">
       <app-alert [message]="alertMessage"></app-alert>
     </div>
-    <div *ngIf="isItem" class="col-12">
-      <app-search-card (goDetail)="onGoDetail($event)" [item]="item" [l]="this.l"></app-search-card>
+    <div class="col-12">
+      <app-search-card (goDetail)="onGoDetail($event)" [game]="game" [l]="this.l"></app-search-card>
     </div>
   </div>
 </div>
-<div class="tutorial-cards">
+<!--<div class="tutorial-cards">
   <div class="row d-flex justify-content-center">
     <div *ngFor="let t of tutorialCardsSelected" class="col-12 col-md-3 my-3">
       <app-tutorial-card [tutorialCard]="t[0]"></app-tutorial-card>
     </div>
   </div>
-</div>
+</div>-->

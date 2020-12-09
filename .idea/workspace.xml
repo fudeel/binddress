@@ -3,10 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="a4f92088-5491-461e-a3ed-05f772e40fb8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/screens/detail/detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/detail/detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/screens/detail/detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/detail/detail.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/screens/locale/homepage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/locale/homepage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/locale/category-list.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/locale/category-list.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/locale/category.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/locale/category.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/locale/search-card.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/locale/search-card.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/models/item.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/models/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/models/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/services/item-detail.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/services/item-detail.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +93,7 @@
       <workItem from="1606820640791" duration="13250000" />
       <workItem from="1607018289309" duration="14000" />
       <workItem from="1607076805137" duration="6052000" />
-      <workItem from="1607507680998" duration="1650000" />
+      <workItem from="1607507680998" duration="6283000" />
     </task>
     <task id="LOCAL-00001" summary="firebase and github config">
       <created>1605872022737</created>
@@ -199,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607016492856</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="change everything to Futlink">
+      <created>1607509378696</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1607509378696</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,16 +241,21 @@
     <MESSAGE value="refactor" />
     <MESSAGE value="created detail page with info and installed lodash" />
     <MESSAGE value="get data from service without firebase call" />
-    <option name="LAST_COMMIT_MESSAGE" value="get data from service without firebase call" />
+    <MESSAGE value="change everything to Futlink" />
+    <option name="LAST_COMMIT_MESSAGE" value="change everything to Futlink" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1607016486050">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607511046580">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607016486050" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607511046580" />
+    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1607509370612">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607509370612" />
     <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1606472741651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

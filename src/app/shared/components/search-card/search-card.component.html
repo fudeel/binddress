@@ -1,88 +1,46 @@
-<mat-card *ngIf="item" class="search-card shadow">
+<mat-card *ngIf="game" class="search-card shadow">
   <div class="row pt-2">
-    <div *ngIf="item?.imagesUrl.length === 0" class="col-auto pt-2 px-md-4">
-      <img alt height="80" src="assets/images/default-profile-picture.jpg" width="80">
-    </div>
-    <div *ngIf="item?.imagesUrl.length > 0" class="col-auto pt-2 px-md-4">
-      <img [src]="item?.imagesUrl[0]" alt height="80" width="80">
-    </div>
-    <div class="col-auto py-3 px-md-4">
-      <div class="row">
-        <div class="col text-muted card-field-description"><p>{{searchCardLocale.rarity[l]}}</p></div>
-      </div>
-      <p [className]="
-      item.itemRarity === 'grey' ? 'item-grey' :
-      item.itemRarity === 'white' ? 'item-white' :
-      item.itemRarity === 'green' ? 'item-green' :
-      item.itemRarity === 'blue' ? 'item-blue' :
-      item.itemRarity === 'purple' ? 'item-purple' :
-      item.itemRarity === 'orange' ? 'item-orange' :
-      'item-grey'">{{item?.itemRarity | titlecase}}</p>
+    <div *ngIf="game?.gameCategory" class="col-auto pt-2 px-md-4">
+      <fa-icon [icon]="game?.gameCategory === ('tennisOne' || 'tennisTwo') ? faTableTennis : faFutbol"></fa-icon>
     </div>
     <div class="col-auto py-3 px-md-4">
       <div class="row">
         <div class="col text-muted card-field-description"><p>{{searchCardLocale.category[l]}}</p></div>
       </div>
-      <a>{{item?.category | titlecase}}</a>
-    </div>
-    <!--<div class="col-auto py-3 px-md-4">
-      <div class="row">
-        <div class="col text-muted card-field-description"><p>{{searchCardLocale.brand[l]}}</p></div>
-      </div>
-      <a>{{item?.brand | titlecase}}</a>
-    </div>-->
-    <div class="col-auto py-3 px-md-4">
-      <div class="row">
-        <div class="col text-muted card-field-description"><p>{{searchCardLocale.conditions[l]}}</p></div>
-      </div>
-      <a>{{item?.condition | titlecase}}</a>
+      <p>{{game.gameCategory === 'tennisOne' ? searchCardLocale.tennisOne[l] :
+        game.gameCategory === 'tennisTwo' ? searchCardLocale.tennisTwo[l] :
+          game.gameCategory === 'soccerFive' ? searchCardLocale.soccerFive[l] :
+            game.gameCategory === 'soccerEight' ? searchCardLocale.soccerEight[l] :
+              game.gameCategory === 'soccerEleven' ? searchCardLocale.soccerEleven[l] : '' | titlecase }}</p>
     </div>
     <div class="col-auto py-3 px-md-4">
       <div class="row">
-        <div class="col text-muted card-field-description"><p>{{searchCardLocale.itemName[l]}}</p></div>
+        <div class="col text-muted card-field-description"><p>{{searchCardLocale.minRank[l]}}</p></div>
       </div>
-      <p class="font-weight-bolder">{{item?.itemName | titlecase}}</p>
+      <a>{{game.minRank}}</a>
     </div>
     <div class="col-auto py-3 px-md-4">
       <div class="row">
-        <div class="col text-muted card-field-description"><p>{{searchCardLocale.currentOwner[l]}}</p></div>
+        <div class="col text-muted card-field-description"><p>{{searchCardLocale.day[l]}}</p></div>
       </div>
-      <a>{{item?.ownerInfo?.username | titlecase}}</a>
+      <a>{{game?.day}}</a>
     </div>
-    <!--<div class="col-auto">
-      <div class="row pt-4 d-flex justify-content-center float-left">
-        <div class="col-auto">
-          <fa-icon [icon]="faBarcode" transform="shrink-9"></fa-icon>
-        </div>
-        <div class="col-auto py-2 pl-0">
-          <p class="custom-align">{{item?.itemId | titlecase}}</p>
-        </div>
+    <div class="col-auto py-3 px-md-4">
+      <div class="row">
+        <div class="col text-muted card-field-description"><p>{{searchCardLocale.gameTime[l]}}</p></div>
       </div>
-    </div>-->
-    <div *ngIf="item?.isItemVerified" class="col-auto verified">
-      <div class="row pt-4 d-flex justify-content-center float-left">
-        <div class="col-auto">
-          <fa-icon [icon]="faCertificate" transform="shrink-9"></fa-icon>
-        </div>
-        <div class="col-auto py-2 pl-0">
-          <p class="custom-align">{{searchCardLocale.verified[l]}}</p>
-        </div>
-      </div>
+      <p class="font-weight-bolder">{{game?.gameTime}}</p>
     </div>
-    <div *ngIf="!item?.isItemVerified" class="col-auto not-verified">
-      <div class="row pt-4 d-flex justify-content-center float-left">
-        <div class="col-auto">
-          <fa-icon [icon]="faCertificate" transform="shrink-9"></fa-icon>
-        </div>
-        <div class="col-auto py-2 pl-0">
-          <p class="custom-align">{{searchCardLocale.notVerified[l]}}</p>
-        </div>
+    <div class="col-auto py-3 px-md-4">
+      <div class="row">
+        <div class="col text-muted card-field-description"><p>{{searchCardLocale.createdBy[l]}}</p></div>
       </div>
+      <a>{{game?.organizerInfo?.username | titlecase}}</a>
     </div>
     <div class="col d-flex justify-content-end pt-4">
       <div class="row">
         <div class="col-12">
-          <button (click)="onGoDetail()" color="primary" mat-flat-button>{{searchCardLocale.detailButton[l]}}</button>
+          <button (click)="onGoDetail()" color="accent" mat-flat-button>{{searchCardLocale.join[l]}}</button>
         </div>
       </div>
     </div>

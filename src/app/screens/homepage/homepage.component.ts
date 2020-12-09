@@ -35,7 +35,7 @@ export class HomepageComponent implements OnInit {
 
   homepageLocale = HOMEPAGE_LOCALE
   l: number = 0;
-  isItem = false;
+  isGame = false;
 
   simpleSearchForm = this.fb.group({
     category: ['', Validators.required],
@@ -46,7 +46,7 @@ export class HomepageComponent implements OnInit {
   isAlertVisible = false;
   alertMessage: AlertMessage = new AlertMessage();
 
-  item: any;
+  game: any;
   owner: any;
   image: any;
 
@@ -80,35 +80,30 @@ export class HomepageComponent implements OnInit {
     let currentItem: any;
 
     this.loadingService.isLoading = true;
-    this.afs.collection(selectedCategory, ref =>
-      ref.where('itemId', '==', selectedItemId)
+    this.afs.collection('games', ref =>
+      ref.where('gameId', '==', selectedItemId)
     ).valueChanges().subscribe(res => {
       if (res?.length > 0) {
         this.isAlertVisible = false;
         currentItem = res[0]
-        this.afs.collection('users').doc(currentItem?.fkCurrentOwnerUuid?.id).valueChanges().subscribe(res => {
-          let ownerInfo
-          ownerInfo = res;
-          currentItem.ownerInfo = ownerInfo;
+        this.afs.collection('users').doc(currentItem?.createdBy?.id).valueChanges().subscribe(res => {
+
+          console.log('res: ', res)
+          let organizerInfo
+          organizerInfo = res;
+          currentItem.organizerInfo = organizerInfo;
           currentItem.imagesUrl = [];
 
-          this.storage.ref(selectedCategory + '/' + currentItem?.fkCurrentOwnerUuid?.id + '/' + currentItem.itemId).listAll().subscribe(images => {
-            images.items.forEach(i => {
-              i.getDownloadURL().then(res => {
-                currentItem.imagesUrl.push(res)
-              })
-            })
-          })
-
-          this.item = currentItem;
+          this.game = currentItem;
+          console.log('item: ', this.game);
           this.loadingService.isLoading = false;
-          this.isItem = true;
+          this.isGame = true;
         })
 
 
       } else {
         this.loadingService.isLoading = false;
-        this.isItem = false;
+        this.isGame = false;
         this.alertMessage = {
           style: "warning",
           title: this.homepageLocale.alertTitle[this.l],
@@ -122,7 +117,7 @@ export class HomepageComponent implements OnInit {
 
 
   onGoDetail(event) {
-    this.itemDetailService.itemInfo = this.item;
+    this.itemDetailService.itemInfo = this.game;
     this.router.navigate(['detail', event.fkCurrentOwnerUuid.id + '/' + event.category + '/' + event.itemId])
   }
 }
