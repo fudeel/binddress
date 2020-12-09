@@ -5,7 +5,7 @@ import {Game} from "../models/game";
 @Injectable({
   providedIn: 'root'
 })
-export class ItemDetailService {
+export class GameDetailService {
 
   game$: Observable<Game>;
   private gameSubject: Subject<Game>;

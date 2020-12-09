@@ -3,7 +3,7 @@ import {ActivatedRoute, Params} from "@angular/router";
 import {AngularFirestore} from "@angular/fire/firestore";
 import {AngularFireStorage} from "@angular/fire/storage";
 import {Game} from "../../shared/models/game";
-import {ItemDetailService} from "../../shared/services/item-detail.service";
+import {GameDetailService} from "../../shared/services/game-detail.service";
 import DETAIL_LOCALE from '../locale/detail';
 import {LocaleService} from "../../shared/services/locale.service";
 
@@ -14,7 +14,7 @@ import {LocaleService} from "../../shared/services/locale.service";
 })
 export class DetailComponent implements OnInit {
 
-  item: string[];
+  urls: string[];
   game: Game;
   detailLocale = DETAIL_LOCALE;
   l: number = 0;
@@ -22,7 +22,7 @@ export class DetailComponent implements OnInit {
   constructor(private readonly activatedRoute: ActivatedRoute,
               private readonly afs: AngularFirestore,
               private readonly storage: AngularFireStorage,
-              private readonly itemDetailService: ItemDetailService,
+              private readonly gameDetailService: GameDetailService,
               private readonly localeService: LocaleService,) {
     this.localeService.getLanguageValue().subscribe(l => {
       this.l = l
@@ -31,11 +31,12 @@ export class DetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params: Params) => {
-      this.item = params.item.split("/")
-      console.log(this.item)
+      this.urls = params.item.split("/")
+      console.log(this.urls)
 
-      this.itemDetailService.getGameInfo().subscribe(detail => {
-        if (detail?.itemId) {
+      this.gameDetailService.getGameInfo().subscribe(detail => {
+        console.log('detail: ', detail);
+        if (detail?.gameId) {
           this.game = detail
           console.log('loading data from app: ', this.game)
         } else {
@@ -48,25 +49,16 @@ export class DetailComponent implements OnInit {
 
   getItemDetail() {
     let currentItem: any;
-
-    this.afs.collection(this.item[1], ref =>
-      ref.where('itemId', '==', this.item[2])
+    this.afs.collection('games', ref =>
+      ref.where('gameId', '==', this.urls[2])
     ).valueChanges().subscribe(itemRes => {
       if (itemRes?.length > 0) {
         currentItem = itemRes[0]
-        this.afs.collection('users').doc(this.item[0]).valueChanges().subscribe(userRef => {
+        this.afs.collection('users').doc(currentItem.createdBy.id).valueChanges().subscribe(userRef => {
           let ownerInfo
           ownerInfo = userRef;
           currentItem.ownerInfo = ownerInfo;
           currentItem.imagesUrl = [];
-
-          this.storage.ref(this.item[1] + '/' + this.item[0] + '/' + this.item[2]).listAll().subscribe(images => {
-            images.items.forEach(i => {
-              i.getDownloadURL().then(res => {
-                currentItem.imagesUrl.push(res)
-              })
-            })
-          })
 
           this.game = currentItem;
           console.log('downloading from firebase: ', this.game)

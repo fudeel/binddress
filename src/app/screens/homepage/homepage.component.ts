@@ -10,7 +10,7 @@ import {AlertMessage} from "../../shared/components/alert/alert.component";
 import {AngularFireStorage} from "@angular/fire/storage";
 import {LocaleService} from "../../shared/services/locale.service";
 import {Router} from "@angular/router";
-import {ItemDetailService} from "../../shared/services/item-detail.service";
+import {GameDetailService} from "../../shared/services/game-detail.service";
 
 
 interface Categories {
@@ -56,7 +56,7 @@ export class HomepageComponent implements OnInit {
               private readonly afs: AngularFirestore,
               private readonly storage: AngularFireStorage,
               private readonly localeService: LocaleService,
-              private readonly itemDetailService: ItemDetailService) {
+              private readonly gameDetailService: GameDetailService) {
     this.localeService.getLanguageValue().subscribe(l => {
       this.l = l
     })
@@ -75,13 +75,13 @@ export class HomepageComponent implements OnInit {
 
   onSimpleSearch() {
     const selectedCategory = this.simpleSearchForm.controls.category.value;
-    const selectedItemId = this.simpleSearchForm.controls.code.value;
+    const selectedGameId = this.simpleSearchForm.controls.code.value;
 
     let currentItem: any;
 
     this.loadingService.isLoading = true;
     this.afs.collection('games', ref =>
-      ref.where('gameId', '==', selectedItemId)
+      ref.where('gameId', '==', selectedGameId)
     ).valueChanges().subscribe(res => {
       if (res?.length > 0) {
         this.isAlertVisible = false;
@@ -117,7 +117,8 @@ export class HomepageComponent implements OnInit {
 
 
   onGoDetail(event) {
-    this.itemDetailService.gameInfo = this.game;
-    this.router.navigate(['detail', event.fkCurrentOwnerUuid.id + '/' + event.category + '/' + event.itemId])
+    console.log('event on go detail click: ', event)
+    this.gameDetailService.gameInfo = this.game;
+    this.router.navigate(['detail', event.organizerInfo.username + '/' + event.gameCategory + '/' + event.gameId])
   }
 }
