@@ -7,7 +7,10 @@ const TOOLBAR_LOCALE = {
   login: ['Login', 'Login'],
   about: ['About us', 'Chi siamo'],
   contact: ['Contact', 'Contatti'],
-  profile: ['Profile', 'Profilo']
+  profile: ['Profile', 'Profilo'],
+  organize: ['Organize', 'Organizza'],
+  search: ['Search', 'Cerca'],
+  gamesMap: ['Games Map', 'Mappa partite']
 };
 
 

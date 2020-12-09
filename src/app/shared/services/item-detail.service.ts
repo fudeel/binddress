@@ -7,25 +7,25 @@ import {Game} from "../models/game";
 })
 export class ItemDetailService {
 
-  item$: Observable<Game>;
-  private itemSubject: Subject<Game>;
+  game$: Observable<Game>;
+  private gameSubject: Subject<Game>;
 
   constructor() {
-    this.itemSubject = new Subject<Game>();
-    this.item$ = this.itemSubject.asObservable();
+    this.gameSubject = new Subject<Game>();
+    this.game$ = this.gameSubject.asObservable();
   }
 
 
-  set itemInfo(newValue) {
+  set gameInfo(newValue) {
 
     console.log('set item info: ', newValue);
 
-    this.item$ = newValue;
-    this.itemSubject.next(newValue);
+    this.game$ = newValue;
+    this.gameSubject.next(newValue);
   }
 
 
-  getItemInfo(): Observable<any> {
-    return of(this.item$);
+  getGameInfo(): Observable<any> {
+    return of(this.game$);
   }
 }

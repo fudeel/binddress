@@ -34,7 +34,7 @@ export class DetailComponent implements OnInit {
       this.item = params.item.split("/")
       console.log(this.item)
 
-      this.itemDetailService.getItemInfo().subscribe(detail => {
+      this.itemDetailService.getGameInfo().subscribe(detail => {
         if (detail?.itemId) {
           this.game = detail
           console.log('loading data from app: ', this.game)

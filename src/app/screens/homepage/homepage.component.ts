@@ -117,7 +117,7 @@ export class HomepageComponent implements OnInit {
 
 
   onGoDetail(event) {
-    this.itemDetailService.itemInfo = this.game;
+    this.itemDetailService.gameInfo = this.game;
     this.router.navigate(['detail', event.fkCurrentOwnerUuid.id + '/' + event.category + '/' + event.itemId])
   }
 }
