@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4f92088-5491-461e-a3ed-05f772e40fb8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.ZGlzdFxiaW5kcmVzcw.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.ZGlzdFxiaW5kcmVzcw.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/4.2befaa847ddb718be60b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/5.6671fa626970672ace54.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/6.6b8792fa7e0d0758453f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/assets/binddress-theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bindress/assets/binddress-theme.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bindress/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/main.404f98c0a6e8cda0e3e0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/polyfills.f43954ace77eaf1b4591.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/runtime.a2df6f9afa333c187053.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/screens/detail/detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/detail/detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/screens/detail/detail.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/detail/detail.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/screens/detail/detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/detail/detail.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/search-card/search-card.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/binddress-theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/binddress-theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/screens/locale/homepage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/locale/homepage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/locale/category-list.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/locale/category-list.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/locale/category.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/locale/category.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +85,7 @@
       <workItem from="1606820640791" duration="13250000" />
       <workItem from="1607018289309" duration="14000" />
       <workItem from="1607076805137" duration="6052000" />
+      <workItem from="1607507680998" duration="1650000" />
     </task>
     <task id="LOCAL-00001" summary="firebase and github config">
       <created>1605872022737</created>
@@ -269,10 +260,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607016516986" />
-    <state x="666" y="237" width="583" height="566" key="find.popup" timestamp="1607010869857">
+    <state x="666" y="237" width="583" height="566" key="find.popup" timestamp="1607509195482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="666" y="237" width="583" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607010869857" />
+    <state x="666" y="237" width="583" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607509195482" />
     <state x="823" y="405" width="350" height="298" key="org.angular.cli.generate" timestamp="1607015661617">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,15 +1,15 @@
 const HOMEPAGE_LOCALE = {
     mainText: [
-      'Bind it to you, NOW!', 'Bindalo a te, ORA!'
+      'Search ranked games', 'Cerca partite competitive'
     ],
     subtitle: [
-      'Register an article and bind it to you', 'Registra un articolo e legalo a te'
+      'Search or Create ranked Tennis or Soccer games', 'Cerca o Crea partite competitive di Tennis o Calcio'
     ],
-    search: ['Search for bound items', 'Cerca articoli bindati'],
+    search: ['Search Ranked Tennis or Soccer games', 'Cerca partite competitive di Tennis o Calcio'],
     searchButton: ['Search', 'Cerca'],
-    searchPlaceholder: ['Identifier', 'Codice identificatore'],
+    searchPlaceholder: ['', 'Codice identificatore'],
     alertTitle: ['Oops', 'Oops'],
-    alertMessage: ['It seems you are looking for an unregistered item. Check if you inserted the right ID Code.', 'Sembra tu stia cercando un oggetto non registrato. Controlla di aver inserito il codice correttamente']
+    alertMessage: ['It seems there is no game in that range', 'Sembra non ci sia nessuna partita nella zona selezionata']
   }
 ;
 

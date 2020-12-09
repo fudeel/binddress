@@ -2,9 +2,13 @@
   <div [formGroup]="simpleSearchForm" class="row">
     <div class="col d-flex justify-content-center">
       <div class="simple-search">
-        <h1 class="mat-display-3">{{ homepageLocale.search[l] }}</h1>
         <div class="row">
-          <div class="col d-flex justify-content-center">
+          <div class="col-12">
+            <h1 class="mat-display-3">{{ homepageLocale.search[l] }}</h1>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-auto">
             <mat-form-field appearance="fill">
               <mat-label>{{categoryLocale[0].category[l]}}</mat-label>
               <mat-select formControlName="category">
@@ -14,17 +18,15 @@
               </mat-select>
             </mat-form-field>
           </div>
-          <div class="col d-flex justify-content-center">
+          <div class="col-auto">
             <mat-form-field class="example-full-width">
               <input [placeholder]="homepageLocale.searchPlaceholder[l]" matInput formControlName="code">
             </mat-form-field>
           </div>
-        </div>
-        <div class="row px-4">
-          <div class="col d-flex justify-content-md-end justify-content-center">
+          <div class="col-auto py-3">
             <button (click)="onSimpleSearch()" [disabled]="simpleSearchForm.status === 'INVALID'" color="primary"
-                    type="button"
-                    mat-raised-button>{{homepageLocale.searchButton[l]}}</button>
+                    mat-raised-button
+                    type="button">{{homepageLocale.searchButton[l]}}</button>
           </div>
         </div>
       </div>

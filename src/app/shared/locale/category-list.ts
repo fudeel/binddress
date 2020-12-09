@@ -4,26 +4,18 @@
 */
 const CATEGORY_LIST_LOCALE = [
   [
-    {id: 'shoes', value: 'Shoes'},
-    {id: 'coats-and-jackets', value: 'Coats and jackets'},
-    {id: 'jeans', value: 'Jeans'},
-    {id: 'pants', value: 'Pants'},
-    {id: 'sweatshirts', value: 'Sweatshirts'},
-    {id: 'vests', value: 'Vests'},
-    {id: 'shirts', value: 'Shirts'},
-    {id: 't-shirts', value: 'T-shirts'},
-    {id: 'bags', value: 'Bags'}
+    {id: 'tennisOne', value: 'Tennis (1 vs 1)'},
+    {id: 'tennisTwo', value: 'Tennis (2 vs 2)'},
+    {id: 'soccerFive', value: 'Soccer (5 vs 5)'},
+    {id: 'soccerEight', value: 'Soccer (8 vs 8)'},
+    {id: 'soccerEleven', value: 'Soccer (11 vs 11)'}
   ],
   [
-    {id: 'shoes', value: 'Scarpe'},
-    {id: 'coats-and-jackets', value: 'Cappotti e giubbotti'},
-    {id: 'jeans', value: 'Jeans'},
-    {id: 'pants', value: 'Pantaloni'},
-    {id: 'sweatshirts', value: 'Felpe'},
-    {id: 'vests', value: 'Gilet'},
-    {id: 'shirts', value: 'Camicie'},
-    {id: 't-shirts', value: 'Magliette'},
-    {id: 'bags', value: 'Borse'}
+    {id: 'tennisOne', value: 'Tennis (1 vs 1)'},
+    {id: 'tennisTwo', value: 'Tennis (2 vs 2)'},
+    {id: 'soccerFive', value: 'Calcio (5 vs 5)'},
+    {id: 'soccerEight', value: 'Calcio (8 vs 8)'},
+    {id: 'soccerEleven', value: 'Calcio (11 vs 11)'}
   ]
 ];
 
