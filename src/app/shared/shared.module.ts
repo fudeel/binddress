@@ -19,7 +19,8 @@ import {SearchCardComponent} from './components/search-card/search-card.componen
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {AgmCoreModule} from "@agm/core";
-
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatNativeDateModule} from "@angular/material/core";
 
 @NgModule({
   declarations: [CarouselComponent, DialogComponent, TutorialCardComponent, AlertComponent, SearchCardComponent],
@@ -40,6 +41,9 @@ import {AgmCoreModule} from "@agm/core";
     FlexLayoutModule,
     MatSidenavModule,
     AgmCoreModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
+
   ],
   exports: [
     MatToolbarModule,
@@ -62,6 +66,8 @@ import {AgmCoreModule} from "@agm/core";
     FlexLayoutModule,
     MatSidenavModule,
     AgmCoreModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
   ]
 })
 export class SharedModule { }

@@ -6,6 +6,7 @@ import {LoadingService} from './shared/services/loading.service';
 import {AngularFirestore} from "@angular/fire/firestore";
 import {LocaleService} from "./shared/services/locale.service";
 import TOOLBAR_LOCALE from "./shared/locale/toolbar";
+import {GeolocationService} from "./shared/services/geolocation.service";
 
 @Component({
   selector: 'app-root',
@@ -22,7 +23,8 @@ export class AppComponent implements OnInit {
   constructor(private dialog: MatDialog,
               private readonly loadingService: LoadingService,
               private readonly afs: AngularFirestore,
-              private readonly localeService: LocaleService) {
+              private readonly localeService: LocaleService,
+              private readonly geolocationService: GeolocationService) {
     loadingService.isLoading$.subscribe((loading: boolean) => {
       this.isLoading = loading;
     });
@@ -31,6 +33,10 @@ export class AppComponent implements OnInit {
       this.localeValue = localeValue
     })
 
+
+    geolocationService.getClientPosition().subscribe(position => {
+      localStorage.setItem('position', JSON.stringify(position))
+    })
 
   }
 

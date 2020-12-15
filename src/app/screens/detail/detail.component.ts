@@ -6,6 +6,7 @@ import {Game} from "../../shared/models/game";
 import {GameDetailService} from "../../shared/services/game-detail.service";
 import DETAIL_LOCALE from '../locale/detail';
 import {LocaleService} from "../../shared/services/locale.service";
+import {GeolocationService} from "../../shared/services/geolocation.service";
 
 declare var google: any;
 
@@ -30,7 +31,8 @@ export class DetailComponent implements OnInit {
               private readonly afs: AngularFirestore,
               private readonly storage: AngularFireStorage,
               private readonly gameDetailService: GameDetailService,
-              private readonly localeService: LocaleService,) {
+              private readonly localeService: LocaleService,
+              private readonly geolocationService: GeolocationService) {
     this.localeService.getLanguageValue().subscribe(l => {
       this.l = l
     })
@@ -48,6 +50,7 @@ export class DetailComponent implements OnInit {
         }
       })
     })
+
   }
 
 

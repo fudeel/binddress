@@ -9,7 +9,10 @@ const HOMEPAGE_LOCALE = {
     searchButton: ['Search', 'Cerca'],
     searchPlaceholder: ['', 'Codice identificatore'],
     alertTitle: ['Oops', 'Oops'],
-    alertMessage: ['It seems there is no game in that range', 'Sembra non ci sia nessuna partita nella zona selezionata']
+    alertMessage: ['It seems there is no game in the selected date range', 'Sembra non ci sia nessuna partita nei giorni selezionati'],
+    enterDateRange: ['Enter date range', 'Inserisci i giorni'],
+    fromDate: ['From date', 'Dal giorno'],
+    toDate: ['To date', 'Al giorno']
   }
 ;
 

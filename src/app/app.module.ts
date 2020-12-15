@@ -14,6 +14,7 @@ import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {AngularFireStorageModule, BUCKET} from "@angular/fire/storage";
 import {AgmCoreModule} from "@agm/core";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {AgmCoreModule} from "@agm/core";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAnalyticsModule,
     AngularFirestoreModule,

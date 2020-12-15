@@ -11,7 +11,7 @@ import {AngularFireStorage} from "@angular/fire/storage";
 import {LocaleService} from "../../shared/services/locale.service";
 import {Router} from "@angular/router";
 import {GameDetailService} from "../../shared/services/game-detail.service";
-
+import * as moment from 'moment';
 
 interface Categories {
   value: string;
@@ -26,6 +26,8 @@ interface Categories {
 
 export class HomepageComponent implements OnInit {
 
+  moment = moment();
+  today = new Date();
   categoryLocale = CATEGORY_LOCALE;
   categoryListLocale = CATEGORY_LIST_LOCALE;
   tutorialCardsLocale = TUTORIAL_CARDS_LOCALE
@@ -39,7 +41,9 @@ export class HomepageComponent implements OnInit {
 
   simpleSearchForm = this.fb.group({
     category: ['', Validators.required],
-    code: ['', Validators.required],
+    distance: [''],
+    fromDate: ['', Validators.required],
+    toDate: ['', Validators.required],
   });
 
 
@@ -65,6 +69,8 @@ export class HomepageComponent implements OnInit {
 
   ngOnInit(): void {
 
+    console.log('today: ', this.today);
+
     this.categoryListLocale[this.l].forEach(c => {
       this.categories.push({value: c.id, viewValue: c.value});
     });
@@ -74,14 +80,12 @@ export class HomepageComponent implements OnInit {
 
 
   onSimpleSearch() {
-    const selectedCategory = this.simpleSearchForm.controls.category.value;
-    const selectedGameId = this.simpleSearchForm.controls.code.value;
-
     let currentItem: any;
 
     this.loadingService.isLoading = true;
     this.afs.collection('games', ref =>
-      ref.where('gameId', '==', selectedGameId)
+      ref.where('date', '>=', this.simpleSearchForm.controls.fromDate.value)
+        .where('date', '<=', this.simpleSearchForm.controls.toDate.value).where('gameCategory', '==', this.simpleSearchForm.controls.category.value)
     ).valueChanges().subscribe(res => {
       if (res?.length > 0) {
         this.isAlertVisible = false;
@@ -100,6 +104,7 @@ export class HomepageComponent implements OnInit {
 
 
       } else {
+        this.game = null;
         this.loadingService.isLoading = false;
         this.isGame = false;
         this.alertMessage = {
