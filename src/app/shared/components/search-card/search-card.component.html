@@ -23,13 +23,13 @@
       <div class="row">
         <div class="col text-muted card-field-description"><p>{{searchCardLocale.day[l]}}</p></div>
       </div>
-      <a>{{game?.day}}</a>
+      <a>{{gameDate.format('ll')}}</a>
     </div>
     <div class="col-auto py-3 px-md-4">
       <div class="row">
         <div class="col text-muted card-field-description"><p>{{searchCardLocale.gameTime[l]}}</p></div>
       </div>
-      <p class="font-weight-bolder">{{game?.gameTime}}</p>
+      <p class="font-weight-bolder">{{gameDate.format('LT')}}</p>
     </div>
     <div class="col-auto py-3 px-md-4">
       <div class="row">

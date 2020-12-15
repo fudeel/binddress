@@ -68,9 +68,6 @@ export class HomepageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
-    console.log('today: ', this.today);
-
     this.categoryListLocale[this.l].forEach(c => {
       this.categories.push({value: c.id, viewValue: c.value});
     });

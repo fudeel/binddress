@@ -20,7 +20,7 @@ import {FlexLayoutModule} from "@angular/flex-layout";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {AgmCoreModule} from "@agm/core";
 import {MatDatepickerModule} from "@angular/material/datepicker";
-import {MatNativeDateModule} from "@angular/material/core";
+import {MAT_DATE_LOCALE, MatNativeDateModule} from "@angular/material/core";
 
 @NgModule({
   declarations: [CarouselComponent, DialogComponent, TutorialCardComponent, AlertComponent, SearchCardComponent],
@@ -68,6 +68,9 @@ import {MatNativeDateModule} from "@angular/material/core";
     AgmCoreModule,
     MatNativeDateModule,
     MatDatepickerModule,
+  ],
+  providers: [
+    {provide: MAT_DATE_LOCALE, useValue: 'it-IT'},
   ]
 })
 export class SharedModule { }

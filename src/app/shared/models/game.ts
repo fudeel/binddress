@@ -1,4 +1,6 @@
 import {User} from "./user";
+import firebase from "firebase";
+import Timestamp = firebase.firestore.Timestamp;
 
 export class Game {
   gameId: string;
@@ -7,6 +9,6 @@ export class Game {
   playersUuid: string[];
   minRank: number | 'open';
   gameTime: string;
-  day: string;
+  date: Timestamp;
   organizerInfo: User;
 }

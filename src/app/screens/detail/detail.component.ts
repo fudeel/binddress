@@ -68,7 +68,6 @@ export class DetailComponent implements OnInit {
           currentItem.imagesUrl = [];
 
           this.game = currentItem;
-          console.log('downloading from firebase: ', this.game)
         })
       }
     })

@@ -43,7 +43,7 @@
       <app-alert [message]="alertMessage"></app-alert>
     </div>
     <div class="col-12">
-      <app-search-card (goDetail)="onGoDetail($event)" [game]="game" [l]="this.l"></app-search-card>
+      <app-search-card (goDetail)="onGoDetail($event)" *ngIf="game" [game]="game" [l]="this.l"></app-search-card>
     </div>
   </div>
 </div>

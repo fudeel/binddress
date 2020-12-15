@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {faBarcode, faCertificate, faFutbol, faTableTennis} from "@fortawesome/free-solid-svg-icons";
 import SEARCH_CARD_LOCALE from '../../locale/search-card'
 import {Game} from "../../models/game";
+import * as moment from "moment";
 
 @Component({
   selector: 'app-search-card',
@@ -21,11 +22,20 @@ export class SearchCardComponent implements OnInit {
   faTableTennis = faTableTennis
   faFutbol = faFutbol
 
-  constructor() {
+  gameDate: any;
 
+  constructor() {
   }
 
   ngOnInit(): void {
+    let loc: string = '';
+    if (Number(localStorage.getItem('locale')) === 0) {
+      loc = 'en'
+    } else if (Number(localStorage.getItem('locale')) === 1) {
+      loc = 'it'
+    }
+    this.gameDate = moment(this.game.date.toDate()).locale(loc)
+
   }
 
   onGoDetail() {
