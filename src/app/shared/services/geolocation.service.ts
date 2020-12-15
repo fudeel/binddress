@@ -13,4 +13,9 @@ export class GeolocationService {
   getClientPosition() {
     return this.httpClient.get('https://json.geoiplookup.io')
   }
+
+
+  getClientPositionFromLocalStorage() {
+    return JSON.parse(localStorage.getItem('position'));
+  }
 }

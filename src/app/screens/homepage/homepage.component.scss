@@ -1,6 +1,6 @@
 .homepage {
   position: relative;
-  margin: 8em auto auto;
+  margin: 8em auto 10em;
 
   .bound-item {
     position: inherit;
@@ -12,4 +12,10 @@
 .tutorial-cards {
   position: relative;
   margin: 2em auto auto;
+}
+
+
+agm-map {
+  position: relative;
+  height: 30em;
 }

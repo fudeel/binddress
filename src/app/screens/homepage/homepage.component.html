@@ -46,6 +46,20 @@
       <app-search-card (goDetail)="onGoDetail($event)" *ngIf="game" [game]="game" [l]="this.l"></app-search-card>
     </div>
   </div>
+  <div class="row">
+    <div class="col-12">
+      <agm-map *ngIf="latitude && longitude" [clickableIcons]="true" [latitude]="latitude" [longitude]="longitude"
+               [maxZoom]="16" [minZoom]="8" [zoom]="14">
+        <agm-marker [animation]="'BOUNCE'" [iconUrl]="" [latitude]="latitude" [longitude]="longitude" [title]="'You'">
+          <div class="row">
+            <div class="col-12">
+              <h1>You</h1>
+            </div>
+          </div>
+        </agm-marker>
+      </agm-map>
+    </div>
+  </div>
 </div>
 <!--<div class="tutorial-cards">
   <div class="row d-flex justify-content-center">

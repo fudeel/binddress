@@ -12,6 +12,7 @@ import {LocaleService} from "../../shared/services/locale.service";
 import {Router} from "@angular/router";
 import {GameDetailService} from "../../shared/services/game-detail.service";
 import * as moment from 'moment';
+import {GeolocationService} from "../../shared/services/geolocation.service";
 
 interface Categories {
   value: string;
@@ -54,13 +55,18 @@ export class HomepageComponent implements OnInit {
   owner: any;
   image: any;
 
+
+  latitude;
+  longitude;
+
   constructor(private fb: FormBuilder,
               private readonly router: Router,
               private readonly loadingService: LoadingService,
               private readonly afs: AngularFirestore,
               private readonly storage: AngularFireStorage,
               private readonly localeService: LocaleService,
-              private readonly gameDetailService: GameDetailService) {
+              private readonly gameDetailService: GameDetailService,
+              private readonly geolocationService: GeolocationService) {
     this.localeService.getLanguageValue().subscribe(l => {
       this.l = l
     })
@@ -68,6 +74,16 @@ export class HomepageComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    if (localStorage.getItem('position')) {
+      this.latitude = this.geolocationService.getClientPositionFromLocalStorage()?.latitude;
+      this.longitude = this.geolocationService.getClientPositionFromLocalStorage()?.longitude;
+
+      console.log('lat: ', this.latitude)
+      console.log('long: ', this.longitude)
+    } else {
+      this.geolocationService.getClientPosition().subscribe()
+    }
+
     this.categoryListLocale[this.l].forEach(c => {
       this.categories.push({value: c.id, viewValue: c.value});
     });
