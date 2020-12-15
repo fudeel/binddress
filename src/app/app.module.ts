@@ -13,6 +13,7 @@ import {AngularFireAnalyticsModule} from '@angular/fire/analytics';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {AngularFireStorageModule, BUCKET} from "@angular/fire/storage";
+import {AgmCoreModule} from "@agm/core";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,10 @@ import {AngularFireStorageModule, BUCKET} from "@angular/fire/storage";
     AngularFireStorageModule,
     SharedModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAQYOTZGOUhGmlKp1AJNfTY_yBGUcsM2j4'
+    })
   ],
   entryComponents: [DialogComponent],
   providers: [{provide: BUCKET, useValue: 'gs://binddress00.appspot.com/'}],

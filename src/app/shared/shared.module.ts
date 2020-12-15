@@ -18,6 +18,7 @@ import {AlertComponent} from './components/alert/alert.component';
 import {SearchCardComponent} from './components/search-card/search-card.component';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {MatSidenavModule} from "@angular/material/sidenav";
+import {AgmCoreModule} from "@agm/core";
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     MatCardModule,
     FontAwesomeModule,
     FlexLayoutModule,
-    MatSidenavModule
+    MatSidenavModule,
+    AgmCoreModule,
   ],
   exports: [
     MatToolbarModule,
@@ -58,7 +60,8 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     AlertComponent,
     SearchCardComponent,
     FlexLayoutModule,
-    MatSidenavModule
+    MatSidenavModule,
+    AgmCoreModule,
   ]
 })
 export class SharedModule { }

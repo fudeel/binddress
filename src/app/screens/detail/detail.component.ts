@@ -7,6 +7,9 @@ import {GameDetailService} from "../../shared/services/game-detail.service";
 import DETAIL_LOCALE from '../locale/detail';
 import {LocaleService} from "../../shared/services/locale.service";
 
+declare var google: any;
+
+
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
@@ -18,6 +21,10 @@ export class DetailComponent implements OnInit {
   game: Game;
   detailLocale = DETAIL_LOCALE;
   l: number = 0;
+
+  title = 'My first AGM project';
+  lat = 51.678418;
+  lng = 7.809007;
 
   constructor(private readonly activatedRoute: ActivatedRoute,
               private readonly afs: AngularFirestore,
