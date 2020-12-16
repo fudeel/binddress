@@ -43,7 +43,7 @@
       <app-alert [message]="alertMessage"></app-alert>
     </div>
     <ng-container *ngIf="games?.length > 0">
-      <div *ngFor="let g of games" class="col-12">
+      <div *ngFor="let g of games" class="col-12 my-3">
         <app-search-card (goDetail)="onGoDetail($event)" *ngIf="g" [game]="g" [l]="this.l"></app-search-card>
       </div>
     </ng-container>
@@ -51,7 +51,7 @@
   <div class="row">
     <div class="col-12">
       <agm-map *ngIf="latitude && longitude" [clickableIcons]="true" [latitude]="latitude" [longitude]="longitude"
-               [maxZoom]="16" [minZoom]="8" [zoom]="14">
+               [maxZoom]="16" [minZoom]="8" [zoom]="12">
         <agm-marker [animation]="'BOUNCE'" [iconUrl]="" [latitude]="latitude" [longitude]="longitude" [title]="'You'">
           <div class="row">
             <div class="col-12">

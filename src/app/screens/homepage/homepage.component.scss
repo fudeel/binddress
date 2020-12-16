@@ -1,11 +1,12 @@
 .homepage {
   position: relative;
-  margin: 8em auto 10em;
+  margin: auto auto 10em;
 
   .bound-item {
     position: inherit;
-    min-height: 12em;
+    min-height: 4em;
     margin-top: 2em;
+    margin-bottom: 2em;
   }
 }
 
