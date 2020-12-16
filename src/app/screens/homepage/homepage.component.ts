@@ -13,6 +13,7 @@ import {Router} from "@angular/router";
 import {GameDetailService} from "../../shared/services/game-detail.service";
 import * as moment from 'moment';
 import {GeolocationService} from "../../shared/services/geolocation.service";
+import {Game} from "../../shared/models/game";
 
 interface Categories {
   value: string;
@@ -78,9 +79,6 @@ export class HomepageComponent implements OnInit {
     if (localStorage.getItem('position')) {
       this.latitude = this.geolocationService.getClientPositionFromLocalStorage()?.latitude;
       this.longitude = this.geolocationService.getClientPositionFromLocalStorage()?.longitude;
-
-      console.log('lat: ', this.latitude)
-      console.log('long: ', this.longitude)
     } else {
       this.geolocationService.getClientPosition().subscribe()
     }
@@ -95,31 +93,31 @@ export class HomepageComponent implements OnInit {
 
   onSimpleSearch() {
     let game: any;
-
     this.loadingService.isLoading = true;
     this.afs.collection('games', ref =>
       ref.where('date', '>=', this.simpleSearchForm.controls.fromDate.value)
         .where('date', '<=', this.simpleSearchForm.controls.toDate.value)
         .where('gameCategory', '==', this.simpleSearchForm.controls.category.value)
     ).valueChanges().subscribe(res => {
+      this.games = []
       if (res?.length > 0) {
         this.isAlertVisible = false;
-        game = res[0]
-        this.afs.collection('users').doc(game?.createdBy?.id).valueChanges().subscribe(res => {
 
-          let organizerInfo
-          organizerInfo = res;
-          game.organizerInfo = organizerInfo;
-          game.imagesUrl = [];
+        res.forEach((r: Game) => {
+          this.afs.collection('users').doc(game?.createdBy?.id).valueChanges().subscribe(o => {
 
-          this.games.push(game)
-          this.loadingService.isLoading = false;
-          this.isGame = true;
+            let organizerInfo
+            organizerInfo = o;
+            r.organizerInfo = organizerInfo;
+
+            this.games.push(r)
+            this.loadingService.isLoading = false;
+            this.isGame = true;
 
 
-          console.log('games: ', this.games);
+            console.log('games: ', this.games);
+          })
         })
-
 
       } else {
         this.game = null;

@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4f92088-5491-461e-a3ed-05f772e40fb8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.ZGlzdFxiaW5kcmVzcw.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.ZGlzdFxiaW5kcmVzcw.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bindress/3rdpartylicenses.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/5.8e1b9d00086677d5b132.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/6.006163373a232721df1e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/7.af33722159bfc8904f77.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/assets/binddress-theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bindress/assets/binddress-theme.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/common.f2ab8a36c3d0c642d85a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bindress/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/main.b6a5bd8107ea51c2d8e2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/runtime.f65c27ff78e4a2049a40.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bindress/styles.6f971f3ea5e11eef206e.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/shared/models/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/models/game.ts" afterDir="false" />
     </list>
@@ -97,7 +85,7 @@
       <workItem from="1607076805137" duration="6052000" />
       <workItem from="1607507680998" duration="11975000" />
       <workItem from="1608028616427" duration="19460000" />
-      <workItem from="1608111660723" duration="2461000" />
+      <workItem from="1608111660723" duration="4227000" />
     </task>
     <task id="LOCAL-00001" summary="firebase and github config">
       <created>1605872022737</created>
@@ -267,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608054371860</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="refactor">
+      <created>1608116078018</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1608116078018</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,12 +289,12 @@
     <MESSAGE value="created detail page with info and installed lodash" />
     <MESSAGE value="get data from service without firebase call" />
     <MESSAGE value="change everything to Futlink" />
-    <MESSAGE value="refactor" />
     <MESSAGE value="installed googlemaps" />
     <MESSAGE value="search games with filter and index, get ip" />
     <MESSAGE value="date locale" />
     <MESSAGE value="get position in map" />
-    <option name="LAST_COMMIT_MESSAGE" value="get position in map" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -309,10 +304,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607511046580" />
-    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1608054368095">
+    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1608116069347">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1608054368095" />
+    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1608116069347" />
     <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1606472741651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -333,14 +328,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="165" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608049733749" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1608054413528">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1608116083974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608054413528" />
-    <state x="666" y="237" width="583" height="566" key="find.popup" timestamp="1608051678869">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608116083974" />
+    <state x="666" y="237" width="583" height="656" key="find.popup" timestamp="1608117794796">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="666" y="237" width="583" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608051678869" />
+    <state x="666" y="237" width="583" height="656" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608117794796" />
     <state x="823" y="405" width="350" height="298" key="org.angular.cli.generate" timestamp="1608042317001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
