@@ -54,6 +54,7 @@ export class HomepageComponent implements OnInit {
   game: any;
   owner: any;
   image: any;
+  games: any[] = [];
 
 
   latitude;
@@ -93,26 +94,30 @@ export class HomepageComponent implements OnInit {
 
 
   onSimpleSearch() {
-    let currentItem: any;
+    let game: any;
 
     this.loadingService.isLoading = true;
     this.afs.collection('games', ref =>
       ref.where('date', '>=', this.simpleSearchForm.controls.fromDate.value)
-        .where('date', '<=', this.simpleSearchForm.controls.toDate.value).where('gameCategory', '==', this.simpleSearchForm.controls.category.value)
+        .where('date', '<=', this.simpleSearchForm.controls.toDate.value)
+        .where('gameCategory', '==', this.simpleSearchForm.controls.category.value)
     ).valueChanges().subscribe(res => {
       if (res?.length > 0) {
         this.isAlertVisible = false;
-        currentItem = res[0]
-        this.afs.collection('users').doc(currentItem?.createdBy?.id).valueChanges().subscribe(res => {
+        game = res[0]
+        this.afs.collection('users').doc(game?.createdBy?.id).valueChanges().subscribe(res => {
 
           let organizerInfo
           organizerInfo = res;
-          currentItem.organizerInfo = organizerInfo;
-          currentItem.imagesUrl = [];
+          game.organizerInfo = organizerInfo;
+          game.imagesUrl = [];
 
-          this.game = currentItem;
+          this.games.push(game)
           this.loadingService.isLoading = false;
           this.isGame = true;
+
+
+          console.log('games: ', this.games);
         })
 
 

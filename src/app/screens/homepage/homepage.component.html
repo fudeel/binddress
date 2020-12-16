@@ -42,9 +42,11 @@
     <div *ngIf="isAlertVisible" class="col-12">
       <app-alert [message]="alertMessage"></app-alert>
     </div>
-    <div class="col-12">
-      <app-search-card (goDetail)="onGoDetail($event)" *ngIf="game" [game]="game" [l]="this.l"></app-search-card>
-    </div>
+    <ng-container *ngIf="games?.length > 0">
+      <div *ngFor="let g of games" class="col-12">
+        <app-search-card (goDetail)="onGoDetail($event)" *ngIf="g" [game]="g" [l]="this.l"></app-search-card>
+      </div>
+    </ng-container>
   </div>
   <div class="row">
     <div class="col-12">
@@ -57,6 +59,10 @@
             </div>
           </div>
         </agm-marker>
+        <ng-container *ngIf="games?.length > 0">
+          <agm-marker *ngFor="let g of games" [iconUrl]="" [latitude]="g.geoPoint.latitude"
+                      [longitude]="g.geoPoint.longitude" [title]="'AAA'"></agm-marker>
+        </ng-container>
       </agm-map>
     </div>
   </div>

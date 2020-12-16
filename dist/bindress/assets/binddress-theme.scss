@@ -15,8 +15,50 @@
   font-size: 40px;
 }
 
-
 // background
 .mat-sidenav-content.mat-drawer-content.mat-sidenav-content {
   background: white;
+}
+
+
+.item-grey {
+  color: grey;
+  font-weight: bolder;
+
+}
+
+.item-white {
+  color: black;
+  font-weight: bolder;
+  cursor: default;
+}
+
+.item-green {
+  color: mediumspringgreen;
+  font-weight: bolder;
+  cursor: default;
+}
+
+.item-blue {
+  color: midnightblue;
+  font-weight: bolder;
+  cursor: default;
+}
+
+.item-purple {
+  color: purple;
+  font-weight: bolder;
+  cursor: default;
+}
+
+.item-orange {
+  color: orangered;
+  font-weight: bolder;
+  cursor: default;
+}
+
+.custom-align {
+  position: relative;
+  right: 20px;
+  top: 4px;
 }

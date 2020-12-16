@@ -1,6 +1,7 @@
 import {User} from "./user";
 import firebase from "firebase";
 import Timestamp = firebase.firestore.Timestamp;
+import GeoPoint = firebase.firestore.GeoPoint;
 
 export class Game {
   gameId: string;
@@ -11,4 +12,5 @@ export class Game {
   gameTime: string;
   date: Timestamp;
   organizerInfo: User;
+  geoPoint: GeoPoint;
 }

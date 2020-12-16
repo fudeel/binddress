@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4f92088-5491-461e-a3ed-05f772e40fb8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.ZGlzdFxiaW5kcmVzcw.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.ZGlzdFxiaW5kcmVzcw.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bindress/3rdpartylicenses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/5.8e1b9d00086677d5b132.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/6.006163373a232721df1e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/7.af33722159bfc8904f77.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/assets/binddress-theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bindress/assets/binddress-theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/common.f2ab8a36c3d0c642d85a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bindress/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/main.b6a5bd8107ea51c2d8e2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/runtime.f65c27ff78e4a2049a40.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bindress/styles.6f971f3ea5e11eef206e.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/screens/homepage/homepage.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/services/geolocation.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/services/geolocation.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/models/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/models/game.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +96,8 @@
       <workItem from="1607018289309" duration="14000" />
       <workItem from="1607076805137" duration="6052000" />
       <workItem from="1607507680998" duration="11975000" />
-      <workItem from="1608028616427" duration="18510000" />
+      <workItem from="1608028616427" duration="19460000" />
+      <workItem from="1608111660723" duration="2461000" />
     </task>
     <task id="LOCAL-00001" summary="firebase and github config">
       <created>1605872022737</created>
@@ -250,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608051718865</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="get position in map">
+      <created>1608054371860</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1608054371860</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +298,8 @@
     <MESSAGE value="installed googlemaps" />
     <MESSAGE value="search games with filter and index, get ip" />
     <MESSAGE value="date locale" />
-    <option name="LAST_COMMIT_MESSAGE" value="date locale" />
+    <MESSAGE value="get position in map" />
+    <option name="LAST_COMMIT_MESSAGE" value="get position in map" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -291,10 +309,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607511046580" />
-    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1608051714662">
+    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1608054368095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1608051714662" />
+    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1608054368095" />
     <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1606472741651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -315,10 +333,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="165" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608049733749" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1608051724937">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1608054413528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608051724937" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608054413528" />
     <state x="666" y="237" width="583" height="566" key="find.popup" timestamp="1608051678869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -327,13 +345,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="823" y="405" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1040@0.0.1920.1040" timestamp="1608042317001" />
-    <state x="617" y="246" width="672" height="677" key="run.anything.popup" timestamp="1608050594021">
+    <state x="617" y="246" width="672" height="677" key="run.anything.popup" timestamp="1608115352436">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="617" y="246" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608050594021" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608032558780">
+    <state x="617" y="246" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608115352436" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608114800367">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608032558780" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608114800367" />
   </component>
 </project>
